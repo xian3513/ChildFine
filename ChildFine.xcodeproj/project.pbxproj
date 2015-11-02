@@ -58,6 +58,10 @@
 		90BF02691BE7002D006A84C0 /* ChildFine */ = {
 			isa = PBXGroup;
 			children = (
+				90BF02811BE70895006A84C0 /* Main */,
+				90BF02821BE708A7006A84C0 /* Expand */,
+				90BF02831BE708CF006A84C0 /* Vender */,
+				90BF02841BE708F1006A84C0 /* Resource */,
 				90BF026D1BE7002D006A84C0 /* AppDelegate.h */,
 				90BF026E1BE7002D006A84C0 /* AppDelegate.m */,
 				90BF02701BE7002D006A84C0 /* ViewController.h */,
@@ -77,6 +81,34 @@
 				90BF026B1BE7002D006A84C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90BF02811BE70895006A84C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		90BF02821BE708A7006A84C0 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Expand;
+			sourceTree = "<group>";
+		};
+		90BF02831BE708CF006A84C0 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vender;
+			sourceTree = "<group>";
+		};
+		90BF02841BE708F1006A84C0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
