@@ -10,4 +10,7 @@
 
 @interface BasicViewController : UIViewController
 
+- (void)defaultDataAndView;
+
+- (void)addPromptAndQRCodeOnRightBarButtonItemWith:(UIViewController *)target action:(SEL)action;
 @end

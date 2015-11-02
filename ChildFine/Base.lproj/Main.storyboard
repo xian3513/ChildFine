@@ -27,7 +27,7 @@
         <!--看看-->
         <scene sceneID="4Dn-MN-x8r">
             <objects>
-                <navigationController id="dxj-zO-7F2" sceneMemberID="viewController">
+                <navigationController id="dxj-zO-7F2" customClass="BasicNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="看看" image="tabbar_look" selectedImage="tabbar_look" id="9Xm-hQ-mMG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="czO-A6-eUG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="926" y="-774"/>
         </scene>
-        <!--View Controller-->
+        <!--Look View Controller-->
         <scene sceneID="Wyb-CX-tNt">
             <objects>
-                <viewController id="xAy-UJ-wrV" sceneMemberID="viewController">
+                <viewController id="xAy-UJ-wrV" customClass="LookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xm4-N2-ZHm"/>
                         <viewControllerLayoutGuide type="bottom" id="LNO-J4-X9A"/>
@@ -103,7 +103,7 @@
         <!--我-->
         <scene sceneID="9Wo-Wq-PGL">
             <objects>
-                <navigationController id="eHW-rn-h76" sceneMemberID="viewController">
+                <navigationController id="eHW-rn-h76" customClass="BasicNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我" image="tabbar_me" selectedImage="tabbar_me" id="BlN-cu-bVk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vuy-Vb-KSi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -130,7 +130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.27346994250000001" green="0.27285772580000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="B4t-0l-iH0"/>
                 </viewController>

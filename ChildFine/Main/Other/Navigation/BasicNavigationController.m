@@ -16,28 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addPromptAndQRCodeOnRightBarButtonItem];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
 }
 
-- (void)addPromptAndQRCodeOnRightBarButtonItem {
-    
-        UIBarButtonItem *rightButton1 = [[UIBarButtonItem alloc]
-                                         initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
-                                         target:self
-                                         action:@selector(aa)];
-    [rightButton1 setTitle:@"hah"];
-        UIBarButtonItem *rightButton2 = [[UIBarButtonItem alloc]
-                                         initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
-                                         target:self
-                                         action:nil];
-        NSArray *buttonArray = [[NSArray alloc] initWithObjects:rightButton1,rightButton2, nil];
-        self.navigationItem.rightBarButtonItems = buttonArray;
-    
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+  
 }
 
-- (void)aa{
-
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

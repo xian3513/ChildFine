@@ -14,9 +14,23 @@
 
 @implementation LookViewController
 
+//重写父类初始化 方法
+- (void)defaultDataAndView {
+    [super defaultDataAndView];
+    [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+}
+
+- (void)buttonPress:(UIBarButtonItem *)item {
+    if(item.tag == 0){
+    
+    }else {
+    
+    }
 }
 
 - (void)didReceiveMemoryWarning {

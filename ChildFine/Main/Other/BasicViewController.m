@@ -14,9 +14,41 @@
 
 @implementation BasicViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if(self = [super initWithCoder:aDecoder]){
+        [self defaultDataAndView];
+    }
+    return self;
+}
+
+- (instancetype)init {
+    if(self = [super init]){
+        [self defaultDataAndView];
+    }
+    return self;
+}
+- (void)defaultDataAndView {
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)addPromptAndQRCodeOnRightBarButtonItemWith:(UIViewController *)target action:(SEL)action {
+    
+    UIBarButtonItem *QRCodeButton = [[UIBarButtonItem alloc]
+                                     initWithImage:[UIImage imageNamed:@"tabbar_learn"] style:UIBarButtonItemStylePlain target:target action:action];
+    UIBarButtonItem *promptButton = [[UIBarButtonItem alloc]
+                                     initWithImage:[UIImage imageNamed:@"tabbar_learn"] style:UIBarButtonItemStylePlain target:target action:action];
+    NSArray *buttonArray = [[NSArray alloc] initWithObjects:QRCodeButton,promptButton, nil];
+    self.navigationItem.rightBarButtonItems = buttonArray;
+    
+}
+
+- (void)tabbarButtonPress:(UIBarButtonItem *)item {
+    NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)didReceiveMemoryWarning {
