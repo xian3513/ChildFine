@@ -13,6 +13,7 @@
 		90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02731BE7002D006A84C0 /* Main.storyboard */; };
 		90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02761BE7002D006A84C0 /* Assets.xcassets */; };
 		90BF027A1BE7002D006A84C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02781BE7002D006A84C0 /* LaunchScreen.storyboard */; };
+		90BF02A31BE71305006A84C0 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		90BF02761BE7002D006A84C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BF02791BE7002D006A84C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90BF027B1BE7002D006A84C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BF02A11BE71305006A84C0 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +142,18 @@
 		90BF029F1BE71265006A84C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				90BF02A01BE712E1006A84C0 /* TabBar */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		90BF02A01BE712E1006A84C0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				90BF02A11BE71305006A84C0 /* MainTabBarViewController.h */,
+				90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
+				90BF02A31BE71305006A84C0 /* MainTabBarViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
 			);
