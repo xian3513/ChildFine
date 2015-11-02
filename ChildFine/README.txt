@@ -1,0 +1,9 @@
+//
+//  README.cpp
+//  ChildFine
+//
+//  Created by xian on 15/11/2.
+//  Copyright © 2015年 xian. All rights reserved.
+//
+
+1. 图片命名规范 如tabbar的image 命名为 book pic等，个人建议至少要加一个_标示出从属模块

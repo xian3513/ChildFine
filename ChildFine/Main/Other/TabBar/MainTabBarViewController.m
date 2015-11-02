@@ -14,6 +14,24 @@
 
 @implementation MainTabBarViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if(self = [super initWithCoder:aDecoder]){
+        [self defaultData];
+    }
+    return self;
+}
+
+- (instancetype)init {
+    if(self = [super init]){
+    
+    }
+    return self;
+}
+
+- (void)defaultData {
+    self.tabBar.selectedImageTintColor = [UIColor orangeColor];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

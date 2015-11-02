@@ -13,6 +13,8 @@
 		90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02731BE7002D006A84C0 /* Main.storyboard */; };
 		90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02761BE7002D006A84C0 /* Assets.xcassets */; };
 		90BF02A31BE71305006A84C0 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90BF02A61BE7366D006A84C0 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A51BE7366D006A84C0 /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		90BF02A91BE73B7D006A84C0 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A81BE73B7D006A84C0 /* BasicNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		90BF027B1BE7002D006A84C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BF02A11BE71305006A84C0 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		90BF02A51BE7366D006A84C0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		90BF02A71BE73B7D006A84C0 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
+		90BF02A81BE73B7D006A84C0 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 		90BF02691BE7002D006A84C0 /* ChildFine */ = {
 			isa = PBXGroup;
 			children = (
+				90BF02A51BE7366D006A84C0 /* README.txt */,
 				90BF029B1BE71265006A84C0 /* Main */,
 				90BF029A1BE71209006A84C0 /* Expand */,
 				90BF02991BE71200006A84C0 /* Resource */,
@@ -139,6 +145,7 @@
 		90BF029F1BE71265006A84C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				90BF02A41BE7356F006A84C0 /* Navigation */,
 				90BF02A01BE712E1006A84C0 /* TabBar */,
 			);
 			path = Other;
@@ -151,6 +158,15 @@
 				90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		90BF02A41BE7356F006A84C0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				90BF02A71BE73B7D006A84C0 /* BasicNavigationController.h */,
+				90BF02A81BE73B7D006A84C0 /* BasicNavigationController.m */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BF02A91BE73B7D006A84C0 /* BasicNavigationController.m in Sources */,
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
 				90BF02A31BE71305006A84C0 /* MainTabBarViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
+				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

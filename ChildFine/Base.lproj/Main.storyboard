@@ -28,7 +28,7 @@
         <scene sceneID="4Dn-MN-x8r">
             <objects>
                 <navigationController id="dxj-zO-7F2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="看看" id="9Xm-hQ-mMG"/>
+                    <tabBarItem key="tabBarItem" title="看看" image="tabbar_look" selectedImage="tabbar_look" id="9Xm-hQ-mMG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="czO-A6-eUG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -86,7 +86,7 @@
         <scene sceneID="hfr-sX-nAd">
             <objects>
                 <navigationController id="Kcu-M9-3i0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="学学" id="iB2-pv-dcU"/>
+                    <tabBarItem key="tabBarItem" title="学学" image="tabbar_learn" selectedImage="tabbar_learn" id="iB2-pv-dcU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MI7-S7-aoY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -104,7 +104,7 @@
         <scene sceneID="9Wo-Wq-PGL">
             <objects>
                 <navigationController id="eHW-rn-h76" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我" id="BlN-cu-bVk"/>
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar_me" selectedImage="tabbar_me" id="BlN-cu-bVk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vuy-Vb-KSi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -139,4 +139,9 @@
             <point key="canvasLocation" x="1752" y="1283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tabbar_learn" width="30" height="30"/>
+        <image name="tabbar_look" width="30" height="30"/>
+        <image name="tabbar_me" width="30" height="30"/>
+    </resources>
 </document>
