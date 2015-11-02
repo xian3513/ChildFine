@@ -58,10 +58,10 @@
 		90BF02691BE7002D006A84C0 /* ChildFine */ = {
 			isa = PBXGroup;
 			children = (
-				90BF02811BE70895006A84C0 /* Main */,
-				90BF02821BE708A7006A84C0 /* Expand */,
-				90BF02831BE708CF006A84C0 /* Vender */,
-				90BF02841BE708F1006A84C0 /* Resource */,
+				90BF029B1BE71265006A84C0 /* Main */,
+				90BF029A1BE71209006A84C0 /* Expand */,
+				90BF02991BE71200006A84C0 /* Resource */,
+				90BF02981BE711EF006A84C0 /* Vender */,
 				90BF026D1BE7002D006A84C0 /* AppDelegate.h */,
 				90BF026E1BE7002D006A84C0 /* AppDelegate.m */,
 				90BF02701BE7002D006A84C0 /* ViewController.h */,
@@ -83,88 +83,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		90BF02811BE70895006A84C0 /* Main */ = {
+		90BF02981BE711EF006A84C0 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				90BF02901BE70FF9006A84C0 /* Look */,
-				90BF02921BE71004006A84C0 /* Learn */,
-				90BF02911BE70FFF006A84C0 /* Me */,
 			);
-			name = Main;
+			path = Vender;
 			sourceTree = "<group>";
 		};
-		90BF02821BE708A7006A84C0 /* Expand */ = {
+		90BF02991BE71200006A84C0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Expand;
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		90BF02831BE708CF006A84C0 /* Vender */ = {
+		90BF029A1BE71209006A84C0 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Vender;
+			path = Expand;
 			sourceTree = "<group>";
 		};
-		90BF02841BE708F1006A84C0 /* Resource */ = {
+		90BF029B1BE71265006A84C0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				90BF029C1BE71265006A84C0 /* Learn */,
+				90BF029D1BE71265006A84C0 /* Look */,
+				90BF029E1BE71265006A84C0 /* Me */,
+				90BF029F1BE71265006A84C0 /* Other */,
 			);
-			name = Resource;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		90BF028C1BE70FAC006A84C0 /* Controller */ = {
+		90BF029C1BE71265006A84C0 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Controller;
+			path = Learn;
 			sourceTree = "<group>";
 		};
-		90BF028D1BE70FB5006A84C0 /* View */ = {
+		90BF029D1BE71265006A84C0 /* Look */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = View;
+			path = Look;
 			sourceTree = "<group>";
 		};
-		90BF028E1BE70FBA006A84C0 /* Model */ = {
+		90BF029E1BE71265006A84C0 /* Me */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
+			path = Me;
 			sourceTree = "<group>";
 		};
-		90BF028F1BE70FC4006A84C0 /* Other */ = {
+		90BF029F1BE71265006A84C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Other;
-			sourceTree = "<group>";
-		};
-		90BF02901BE70FF9006A84C0 /* Look */ = {
-			isa = PBXGroup;
-			children = (
-				90BF028E1BE70FBA006A84C0 /* Model */,
-				90BF028D1BE70FB5006A84C0 /* View */,
-				90BF028C1BE70FAC006A84C0 /* Controller */,
-				90BF028F1BE70FC4006A84C0 /* Other */,
-			);
-			name = Look;
-			sourceTree = "<group>";
-		};
-		90BF02911BE70FFF006A84C0 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Me;
-			sourceTree = "<group>";
-		};
-		90BF02921BE71004006A84C0 /* Learn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Learn;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
