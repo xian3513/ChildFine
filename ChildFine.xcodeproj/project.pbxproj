@@ -86,6 +86,10 @@
 		90BF02811BE70895006A84C0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				90BF028E1BE70FBA006A84C0 /* Model */,
+				90BF028D1BE70FB5006A84C0 /* View */,
+				90BF028C1BE70FAC006A84C0 /* Controller */,
+				90BF028F1BE70FC4006A84C0 /* Other */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -109,6 +113,34 @@
 			children = (
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		90BF028C1BE70FAC006A84C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		90BF028D1BE70FB5006A84C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		90BF028E1BE70FBA006A84C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		90BF028F1BE70FC4006A84C0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +364,7 @@
 				90BF02801BE7002D006A84C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
