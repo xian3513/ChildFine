@@ -8,6 +8,7 @@
 
 #import "LookViewController.h"
 #import "RootHeaderView.h"
+#import "TimeflowTableViewCell.h"
 @interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     RootHeaderView *_headerView;
@@ -39,9 +40,10 @@
     _headerView.childClass = @"xisT";
     //_headerView.flowerCount = 0;
     
-    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
+    _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
     _tabView.delegate = self;
     _tabView.dataSource = self;
+    [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell"];
     _tabView.backgroundColor = [UIColor grayColor];
     _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
@@ -63,14 +65,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 200;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  
-    static NSString *identifierCell = @"LookCell";
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifierCell];
-    cell.textLabel.text = @"dd";
+    TimeflowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lookCell"];
+    
     return cell;
 }
 - (void)buttonPress:(UIBarButtonItem *)item {

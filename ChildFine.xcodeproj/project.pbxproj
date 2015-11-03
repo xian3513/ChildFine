@@ -7,31 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771891BE8600E0076CBB2 /* BasicNavigationController.m */; settings = {ASSET_TAGS = (); }; };
-		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; settings = {ASSET_TAGS = (); }; };
-		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
-		907771961BE861270076CBB2 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771951BE861270076CBB2 /* LookViewController.m */; settings = {ASSET_TAGS = (); }; };
-		9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */; settings = {ASSET_TAGS = (); }; };
-		907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771A01BE87D4B0076CBB2 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
-		907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 907771A31BE87E820076CBB2 /* CommonMacros.h */; settings = {ASSET_TAGS = (); }; };
-		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; settings = {ASSET_TAGS = (); }; };
-		907771A91BE8841D0076CBB2 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A81BE8841D0076CBB2 /* scan.wav */; settings = {ASSET_TAGS = (); }; };
-		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; settings = {ASSET_TAGS = (); }; };
-		907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AF1BE894FA0076CBB2 /* UIFont+Type.m */; settings = {ASSET_TAGS = (); }; };
-		907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B21BE898A10076CBB2 /* UILabel+Type.m */; settings = {ASSET_TAGS = (); }; };
-		907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		907771B81BE8C3C90076CBB2 /* TimeflowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C61BE8C7200076CBB2 /* LearnViewController.m */; settings = {ASSET_TAGS = (); }; };
+		904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */; };
+		9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771891BE8600E0076CBB2 /* BasicNavigationController.m */; };
+		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; };
+		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; };
+		907771961BE861270076CBB2 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771951BE861270076CBB2 /* LookViewController.m */; };
+		9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */; };
+		907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771A01BE87D4B0076CBB2 /* UIView+Frame.m */; };
+		907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 907771A31BE87E820076CBB2 /* CommonMacros.h */; };
+		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; };
+		907771A91BE8841D0076CBB2 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A81BE8841D0076CBB2 /* scan.wav */; };
+		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; };
+		907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AF1BE894FA0076CBB2 /* UIFont+Type.m */; };
+		907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B21BE898A10076CBB2 /* UILabel+Type.m */; };
+		907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */; };
+		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; };
+		907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C61BE8C7200076CBB2 /* LearnViewController.m */; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
 		90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02731BE7002D006A84C0 /* Main.storyboard */; };
 		90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02761BE7002D006A84C0 /* Assets.xcassets */; };
-		90BF02A61BE7366D006A84C0 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A51BE7366D006A84C0 /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		90BF02A61BE7366D006A84C0 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A51BE7366D006A84C0 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeflowTableViewCell.xib; sourceTree = "<group>"; };
 		907771881BE8600E0076CBB2 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
 		907771891BE8600E0076CBB2 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
 		9077718A1BE8600E0076CBB2 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		907771B21BE898A10076CBB2 /* UILabel+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Type.m"; sourceTree = "<group>"; };
 		907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeflowTableViewCell.h; sourceTree = "<group>"; };
 		907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeflowTableViewCell.m; sourceTree = "<group>"; };
-		907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeflowTableViewCell.xib; sourceTree = "<group>"; };
 		907771C21BE8C6F90076CBB2 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		907771C31BE8C6F90076CBB2 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		907771C51BE8C7200076CBB2 /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			children = (
 				907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */,
 				907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */,
-				907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */,
+				904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 				90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */,
 				907771A91BE8841D0076CBB2 /* scan.wav in Resources */,
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
-				907771B81BE8C3C90076CBB2 /* TimeflowTableViewCell.xib in Resources */,
+				904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */,
 				907771A71BE884070076CBB2 /* message.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

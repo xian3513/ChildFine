@@ -10,6 +10,24 @@
 
 @implementation TimeflowTableViewCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+    
+    }
+    return self;
+}
+- (instancetype)initWithFrame:(CGRect)frame {
+    if(self = [super initWithFrame:frame]) {
+//        NSInteger width = frame.size.width;
+//        NSInteger height = frame.size.height;
+//        NSInteger pace = 10;
+//        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(pace, 0, width-2*pace, height)];
+//        backgroundView.backgroundColor = [UIColor whiteColor];
+//        [self addSubview:backgroundView];
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }
