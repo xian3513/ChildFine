@@ -14,6 +14,9 @@
 		9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771A01BE87D4B0076CBB2 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
 		907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 907771A31BE87E820076CBB2 /* CommonMacros.h */; settings = {ASSET_TAGS = (); }; };
+		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; settings = {ASSET_TAGS = (); }; };
+		907771A91BE8841D0076CBB2 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A81BE8841D0076CBB2 /* scan.wav */; settings = {ASSET_TAGS = (); }; };
+		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -37,6 +40,10 @@
 		907771A01BE87D4B0076CBB2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		907771A31BE87E820076CBB2 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		907771A51BE87F9E0076CBB2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		907771A61BE884070076CBB2 /* message.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = message.wav; sourceTree = "<group>"; };
+		907771A81BE8841D0076CBB2 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
+		907771AB1BE8859D0076CBB2 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
+		907771AC1BE8859D0076CBB2 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +129,15 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
+		907771AA1BE885830076CBB2 /* BasicView */ = {
+			isa = PBXGroup;
+			children = (
+				907771AB1BE8859D0076CBB2 /* BasicView.h */,
+				907771AC1BE8859D0076CBB2 /* BasicView.m */,
+			);
+			path = BasicView;
+			sourceTree = "<group>";
+		};
 		90BF025E1BE7002D006A84C0 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,8 @@
 		90BF02991BE71200006A84C0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				907771A81BE8841D0076CBB2 /* scan.wav */,
+				907771A61BE884070076CBB2 /* message.wav */,
 				907771A51BE87F9E0076CBB2 /* PrefixHeader.pch */,
 			);
 			path = Resource;
@@ -229,6 +247,7 @@
 		90BF029F1BE71265006A84C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				907771AA1BE885830076CBB2 /* BasicView */,
 				907771871BE8600E0076CBB2 /* BasicController */,
 			);
 			path = Other;
@@ -292,7 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */,
+				907771A91BE8841D0076CBB2 /* scan.wav in Resources */,
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
+				907771A71BE884070076CBB2 /* message.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +335,7 @@
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
 				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
+				907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

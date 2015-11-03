@@ -6,9 +6,9 @@
 //  Copyright © 2015年 xian. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BasicView.h"
 
-@interface RootHeaderView : UIView
+@interface RootHeaderView : BasicView
 
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *childClass;

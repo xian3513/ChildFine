@@ -15,7 +15,7 @@
     
     UILabel *_namelab;
     UIImageView *_sexImageView;
-    UIImageView *_QRCodeImageView;
+    UIButton *_QRCodeButton;
     UILabel *_childClassLab;
     UILabel *_ageAndOnlineDaysLab;
 }
@@ -28,8 +28,8 @@
         _upImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, width, height/2)];
         _upImageView.image = [UIImage imageNamed:@"themeBackground"];
         [self addSubview:_upImageView];
-        _namelab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, _upImageView.frame.size.height/2)];
-        
+        _namelab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, _upImageView.frame.size.height/2)];
+
        
     }
     return self;
