@@ -10,13 +10,16 @@
 		9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771891BE8600E0076CBB2 /* BasicNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		907771961BE861270076CBB2 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771951BE861270076CBB2 /* LookViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771A01BE87D4B0076CBB2 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
+		907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 907771A31BE87E820076CBB2 /* CommonMacros.h */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
 		90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02731BE7002D006A84C0 /* Main.storyboard */; };
 		90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BF02761BE7002D006A84C0 /* Assets.xcassets */; };
 		90BF02A61BE7366D006A84C0 /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02A51BE7366D006A84C0 /* README.txt */; settings = {ASSET_TAGS = (); }; };
-		90BF02B01BE7455C006A84C0 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02AF1BE7455C006A84C0 /* LookViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,14 @@
 		9077718B1BE8600E0076CBB2 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		9077718C1BE8600E0076CBB2 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		907771941BE861270076CBB2 /* LookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
+		907771951BE861270076CBB2 /* LookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
+		9077719B1BE87CBA0076CBB2 /* RootHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootHeaderView.h; sourceTree = "<group>"; };
+		9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootHeaderView.m; sourceTree = "<group>"; };
+		9077719F1BE87D4B0076CBB2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		907771A01BE87D4B0076CBB2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		907771A31BE87E820076CBB2 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		907771A51BE87F9E0076CBB2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,8 +47,6 @@
 		90BF02761BE7002D006A84C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BF027B1BE7002D006A84C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BF02A51BE7366D006A84C0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		90BF02AE1BE7455C006A84C0 /* LookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
-		90BF02AF1BE7455C006A84C0 /* LookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,55 @@
 				9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */,
 			);
 			path = BasicController;
+			sourceTree = "<group>";
+		};
+		907771911BE8611C0076CBB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		907771921BE861220076CBB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		907771931BE861270076CBB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				907771941BE861270076CBB2 /* LookViewController.h */,
+				907771951BE861270076CBB2 /* LookViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		907771971BE8614D0076CBB2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9077719B1BE87CBA0076CBB2 /* RootHeaderView.h */,
+				9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9077719E1BE87D0A0076CBB2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9077719F1BE87D4B0076CBB2 /* UIView+Frame.h */,
+				907771A01BE87D4B0076CBB2 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		907771A21BE87DFC0076CBB2 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				907771A31BE87E820076CBB2 /* CommonMacros.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 		90BF025E1BE7002D006A84C0 = {
@@ -118,6 +176,7 @@
 		90BF02991BE71200006A84C0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				907771A51BE87F9E0076CBB2 /* PrefixHeader.pch */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -125,6 +184,8 @@
 		90BF029A1BE71209006A84C0 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				907771A21BE87DFC0076CBB2 /* Macros */,
+				9077719E1BE87D0A0076CBB2 /* Category */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -143,10 +204,6 @@
 		90BF029C1BE71265006A84C0 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
-				90BF02AC1BE74531006A84C0 /* Model */,
-				90BF02AB1BE7452C006A84C0 /* View */,
-				90BF02AA1BE74522006A84C0 /* Controller */,
-				90BF02AD1BE74536006A84C0 /* Other */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -154,6 +211,10 @@
 		90BF029D1BE71265006A84C0 /* Look */ = {
 			isa = PBXGroup;
 			children = (
+				907771911BE8611C0076CBB2 /* Model */,
+				907771921BE861220076CBB2 /* View */,
+				907771931BE861270076CBB2 /* Controller */,
+				907771971BE8614D0076CBB2 /* Other */,
 			);
 			path = Look;
 			sourceTree = "<group>";
@@ -171,36 +232,6 @@
 				907771871BE8600E0076CBB2 /* BasicController */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		90BF02AA1BE74522006A84C0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				90BF02AE1BE7455C006A84C0 /* LookViewController.h */,
-				90BF02AF1BE7455C006A84C0 /* LookViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		90BF02AB1BE7452C006A84C0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		90BF02AC1BE74531006A84C0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		90BF02AD1BE74536006A84C0 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +304,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */,
-				90BF02B01BE7455C006A84C0 /* LookViewController.m in Sources */,
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
+				907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */,
+				9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */,
+				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */,
 				907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
+				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = ChildFine/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = ChildFine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.ChildFine;
@@ -397,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = ChildFine/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = ChildFine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.com.ChildFine;
