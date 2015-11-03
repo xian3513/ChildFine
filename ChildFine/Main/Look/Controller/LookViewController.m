@@ -14,6 +14,8 @@
     UITableView *_tabView;
 }
 
+@property (nonatomic,strong) UIView *tabViewHeaderView;
+
 @end
 
 @implementation LookViewController
@@ -27,6 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"");
+   [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
+    
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 110)];
     [self.view addSubview:_headerView];
     _headerView.name = @"张";
@@ -34,30 +39,23 @@
     _headerView.childClass = @"xisT";
     //_headerView.flowerCount = 0;
     
-    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, SCREEN_HEIGHT- _headerView.bottom - TABBAR_HEIGHT) style:UITableViewStylePlain];
+    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
     _tabView.delegate = self;
     _tabView.dataSource = self;
+    _tabView.backgroundColor = [UIColor grayColor];
+    _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
     
-    self.navigationController.navigationBar.translucent = NO;
-    //修改navBar底部的黑线
-    if ([self.navigationController.navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
-        NSArray *list=self.navigationController.navigationBar.subviews;
-        for (id obj in list) {
-            if ([obj isKindOfClass:[UIImageView class]]) {
-                UIImageView *imageView=(UIImageView *)obj;
-                NSArray *list2=imageView.subviews;
-                for (id obj2 in list2) {
-                    if ([obj2 isKindOfClass:[UIImageView class]]) {
-                        UIImageView *imageView2=(UIImageView *)obj2;
-                        imageView2.hidden=YES;
-                    }
-                }
-            }
-        }
-    }
 }
 
+#pragma -get
+- (UIView *)tabViewHeaderView {
+    if(!_tabViewHeaderView) {
+        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 30)];
+        _tabViewHeaderView.backgroundColor = [UIColor clearColor];
+    }
+    return _tabViewHeaderView;
+}
 #pragma -tableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -65,11 +63,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 66;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 30;
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

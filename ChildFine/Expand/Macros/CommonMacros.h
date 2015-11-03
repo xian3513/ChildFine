@@ -16,5 +16,7 @@
 
 #define TABBAR_HEIGHT self.tabBarController.tabBar.frame.size.height
 
+#define CONTENT_HEIGHT (SCREEN_HEIGHT - 44 - 20 - TABBAR_HEIGHT)
+
 //Log utils marco
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]

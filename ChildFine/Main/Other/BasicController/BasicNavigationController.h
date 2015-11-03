@@ -10,5 +10,11 @@
 
 @interface BasicNavigationController : UINavigationController
 
+- (void)cancelNavigationBarTranslucentAndBottomBlackLine;
+@end
+
+@interface UIViewController (MyNavigationController)
+
+@property (readonly,nonatomic)BasicNavigationController *MyNavigationController;
 
 @end

@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1700" y="-774"/>
         </scene>
-        <!--View Controller-->
+        <!--Learn View Controller-->
         <scene sceneID="2Ej-Bf-Qqb">
             <objects>
-                <viewController id="yak-AA-RB8" sceneMemberID="viewController">
+                <viewController id="yak-AA-RB8" customClass="LearnViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5lJ-Sl-f6e"/>
                         <viewControllerLayoutGuide type="bottom" id="f3b-pQ-DX5"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="910" y="1283"/>
         </scene>
-        <!--View Controller-->
+        <!--Me View Controller-->
         <scene sceneID="Gi6-br-5ov">
             <objects>
-                <viewController id="vZg-b5-crH" sceneMemberID="viewController">
+                <viewController id="vZg-b5-crH" customClass="MeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Rb-zJ-1HO"/>
                         <viewControllerLayoutGuide type="bottom" id="ZkS-by-dcc"/>

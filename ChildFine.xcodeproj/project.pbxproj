@@ -19,6 +19,10 @@
 		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; settings = {ASSET_TAGS = (); }; };
 		907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AF1BE894FA0076CBB2 /* UIFont+Type.m */; settings = {ASSET_TAGS = (); }; };
 		907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B21BE898A10076CBB2 /* UILabel+Type.m */; settings = {ASSET_TAGS = (); }; };
+		907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		907771B81BE8C3C90076CBB2 /* TimeflowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C61BE8C7200076CBB2 /* LearnViewController.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -50,6 +54,13 @@
 		907771AF1BE894FA0076CBB2 /* UIFont+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Type.m"; sourceTree = "<group>"; };
 		907771B11BE898A10076CBB2 /* UILabel+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Type.h"; sourceTree = "<group>"; };
 		907771B21BE898A10076CBB2 /* UILabel+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Type.m"; sourceTree = "<group>"; };
+		907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeflowTableViewCell.h; sourceTree = "<group>"; };
+		907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeflowTableViewCell.m; sourceTree = "<group>"; };
+		907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeflowTableViewCell.xib; sourceTree = "<group>"; };
+		907771C21BE8C6F90076CBB2 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		907771C31BE8C6F90076CBB2 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		907771C51BE8C7200076CBB2 /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
+		907771C61BE8C7200076CBB2 /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +107,9 @@
 		907771921BE861220076CBB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */,
+				907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */,
+				907771B61BE8C3C90076CBB2 /* TimeflowTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +160,78 @@
 				907771AC1BE8859D0076CBB2 /* BasicView.m */,
 			);
 			path = BasicView;
+			sourceTree = "<group>";
+		};
+		907771B91BE8C61B0076CBB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		907771BA1BE8C6230076CBB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		907771BB1BE8C6290076CBB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				907771C51BE8C7200076CBB2 /* LearnViewController.h */,
+				907771C61BE8C7200076CBB2 /* LearnViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		907771BC1BE8C6510076CBB2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			path = Model/Other;
+			sourceTree = "<group>";
+		};
+		907771BD1BE8C6AA0076CBB2 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				907771BE1BE8C6AA0076CBB2 /* Controller */,
+				907771BF1BE8C6AA0076CBB2 /* Model */,
+				907771C11BE8C6AA0076CBB2 /* View */,
+				907771C01BE8C6AA0076CBB2 /* Other */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		907771BE1BE8C6AA0076CBB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				907771C21BE8C6F90076CBB2 /* MeViewController.h */,
+				907771C31BE8C6F90076CBB2 /* MeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		907771BF1BE8C6AA0076CBB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		907771C01BE8C6AA0076CBB2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		907771C11BE8C6AA0076CBB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		90BF025E1BE7002D006A84C0 = {
@@ -221,9 +307,9 @@
 		90BF029B1BE71265006A84C0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				90BF029C1BE71265006A84C0 /* Learn */,
 				90BF029D1BE71265006A84C0 /* Look */,
-				90BF029E1BE71265006A84C0 /* Me */,
+				90BF029C1BE71265006A84C0 /* Learn */,
+				907771BD1BE8C6AA0076CBB2 /* Me */,
 				90BF029F1BE71265006A84C0 /* Other */,
 			);
 			path = Main;
@@ -232,6 +318,10 @@
 		90BF029C1BE71265006A84C0 /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				907771BB1BE8C6290076CBB2 /* Controller */,
+				907771BA1BE8C6230076CBB2 /* View */,
+				907771B91BE8C61B0076CBB2 /* Model */,
+				907771BC1BE8C6510076CBB2 /* Other */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -245,13 +335,6 @@
 				907771971BE8614D0076CBB2 /* Other */,
 			);
 			path = Look;
-			sourceTree = "<group>";
-		};
-		90BF029E1BE71265006A84C0 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Me;
 			sourceTree = "<group>";
 		};
 		90BF029F1BE71265006A84C0 /* Other */ = {
@@ -323,6 +406,7 @@
 				90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */,
 				907771A91BE8841D0076CBB2 /* scan.wav in Resources */,
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
+				907771B81BE8C3C90076CBB2 /* TimeflowTableViewCell.xib in Resources */,
 				907771A71BE884070076CBB2 /* message.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,11 +426,14 @@
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
 				9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */,
+				907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */,
 				907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */,
 				907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
 				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
+				907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */,
+				907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */,
 				907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
