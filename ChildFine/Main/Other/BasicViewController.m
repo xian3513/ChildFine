@@ -47,8 +47,22 @@
     
 }
 
-- (void)tabbarButtonPress:(UIBarButtonItem *)item {
-    NSLog(@"%@",NSStringFromSelector(_cmd));
+- (void)addHeaderIconOrChildPlusImageOnLeftbarButtonItem:(BOOL)isHeader {
+   
+    NSString *imageName = @"";
+    if(isHeader){
+        imageName = @"default_head";
+    }else {
+        imageName = @"childPlus";
+    }
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+    imageView.layer.cornerRadius = 20;
+    imageView.layer.borderWidth = 2;
+    imageView.layer.borderColor = [UIColor greenColor].CGColor;
+    imageView.layer.masksToBounds = YES;
+    imageView.frame = CGRectMake(0, 0, 44, 40);
+    UIBarButtonItem *iconImage = [[UIBarButtonItem alloc]initWithCustomView:imageView];
+    self.navigationItem.leftBarButtonItem = iconImage;
 }
 
 - (void)didReceiveMemoryWarning {

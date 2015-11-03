@@ -13,4 +13,6 @@
 - (void)defaultDataAndView;
 
 - (void)addPromptAndQRCodeOnRightBarButtonItemWith:(UIViewController *)target action:(SEL)action;
+
+- (void)addHeaderIconOrChildPlusImageOnLeftbarButtonItem:(BOOL)isHeader;
 @end

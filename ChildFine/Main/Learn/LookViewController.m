@@ -18,6 +18,7 @@
 - (void)defaultDataAndView {
     [super defaultDataAndView];
     [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
+    [self addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
 }
 
 - (void)viewDidLoad {
