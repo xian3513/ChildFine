@@ -8,7 +8,11 @@
 
 #import "LookViewController.h"
 #import "RootHeaderView.h"
-@interface LookViewController ()
+@interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
+    
+    RootHeaderView *_headerView;
+    UITableView *_tabView;
+}
 
 @end
 
@@ -23,9 +27,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 110)];
+    [self.view addSubview:_headerView];
+    _headerView.name = @"张";
+    _headerView.age = 3;
+    _headerView.childClass = @"xisT";
+    //_headerView.flowerCount = 0;
     
-    RootHeaderView *headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];
-    [self.view addSubview:headerView];
+    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, SCREEN_HEIGHT- _headerView.bottom - TABBAR_HEIGHT) style:UITableViewStylePlain];
+    _tabView.delegate = self;
+    _tabView.dataSource = self;
+    [self.view addSubview:_tabView];
     
     self.navigationController.navigationBar.translucent = NO;
     //修改navBar底部的黑线
@@ -46,10 +58,31 @@
     }
 }
 
+#pragma -tableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 66;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  
+    static NSString *identifierCell = @"LookCell";
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifierCell];
+    cell.textLabel.text = @"dd";
+    return cell;
+}
 - (void)buttonPress:(UIBarButtonItem *)item {
-    if(item.tag == 0){
+    if(item.tag == 0){ //QRCode
     
-    }else {
+    }else {//消息
     
     }
 }

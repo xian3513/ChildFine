@@ -13,7 +13,7 @@
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *childClass;
 @property (nonatomic) NSInteger sex;  //0代表男  1代表女
-@property (nonatomic) NSInteger *age;
+@property (nonatomic) NSInteger age;
 @property (nonatomic) NSInteger onLineDays;
 
 @property (nonatomic) NSInteger leafCount;

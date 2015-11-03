@@ -17,6 +17,8 @@
 		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; settings = {ASSET_TAGS = (); }; };
 		907771A91BE8841D0076CBB2 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A81BE8841D0076CBB2 /* scan.wav */; settings = {ASSET_TAGS = (); }; };
 		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; settings = {ASSET_TAGS = (); }; };
+		907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AF1BE894FA0076CBB2 /* UIFont+Type.m */; settings = {ASSET_TAGS = (); }; };
+		907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B21BE898A10076CBB2 /* UILabel+Type.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -44,6 +46,10 @@
 		907771A81BE8841D0076CBB2 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
 		907771AB1BE8859D0076CBB2 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
 		907771AC1BE8859D0076CBB2 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
+		907771AE1BE894FA0076CBB2 /* UIFont+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Type.h"; sourceTree = "<group>"; };
+		907771AF1BE894FA0076CBB2 /* UIFont+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Type.m"; sourceTree = "<group>"; };
+		907771B11BE898A10076CBB2 /* UILabel+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Type.h"; sourceTree = "<group>"; };
+		907771B21BE898A10076CBB2 /* UILabel+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Type.m"; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 			children = (
 				9077719F1BE87D4B0076CBB2 /* UIView+Frame.h */,
 				907771A01BE87D4B0076CBB2 /* UIView+Frame.m */,
+				907771AE1BE894FA0076CBB2 /* UIFont+Type.h */,
+				907771AF1BE894FA0076CBB2 /* UIFont+Type.m */,
+				907771B11BE898A10076CBB2 /* UILabel+Type.h */,
+				907771B21BE898A10076CBB2 /* UILabel+Type.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -330,7 +340,9 @@
 				9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */,
 				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
+				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
 				9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */,
+				907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */,
 				907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
 				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,

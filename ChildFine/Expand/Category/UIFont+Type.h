@@ -1,5 +1,5 @@
 //
-//  BasicView.h
+//  UIFont+Type.h
 //  ChildFine
 //
 //  Created by xian on 15/11/3.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+Frame.h"
-#import "UILabel+Type.h"
-#import "CommonMacros.h"
-@interface BasicView : UIView
+
+@interface UIFont (Type)
+
++ (UIFont* )typeWithFamilyBold;
 
 @end
