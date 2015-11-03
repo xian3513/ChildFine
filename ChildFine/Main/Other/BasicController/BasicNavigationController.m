@@ -21,7 +21,7 @@
 }
 
 - (void)cancelNavigationBarTranslucentAndBottomBlackLine {
-    //去掉nav默认的透明效果
+    //去掉nav默认的透明效果 这个属性会导致代码编写的view的y值 差64
     self.navigationBar.translucent = NO;
     //修改navBar底部的黑线
     if ([self.navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
