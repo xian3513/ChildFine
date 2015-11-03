@@ -14,7 +14,7 @@
 
 @implementation LookViewController
 
-//重写父类初始化 方法
+//重写父类初始化 方法/
 - (void)defaultDataAndView {
     [super defaultDataAndView];
     [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
