@@ -34,8 +34,8 @@
 		90BF02A51BE7366D006A84C0 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		90BF02AE1BE7455C006A84C0 /* LookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
 		90BF02AF1BE7455C006A84C0 /* LookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
-		90BF02B11BE74585006A84C0 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
-		90BF02B21BE74585006A84C0 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
+		90BF02B11BE74585006A84C0 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicNavigationController.h; path = Navigation/BasicNavigationController.h; sourceTree = "<group>"; };
+		90BF02B21BE74585006A84C0 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicNavigationController.m; path = Navigation/BasicNavigationController.m; sourceTree = "<group>"; };
 		90BF02B51BE74A6A006A84C0 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		90BF02B61BE74A6A006A84C0 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,18 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				90BF02B41BE74A3A006A84C0 /* BasicViewController */,
-				90BF02A41BE7356F006A84C0 /* Navigation */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		90BF02A41BE7356F006A84C0 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				90BF02B11BE74585006A84C0 /* BasicNavigationController.h */,
-				90BF02B21BE74585006A84C0 /* BasicNavigationController.m */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		90BF02AA1BE74522006A84C0 /* Controller */ = {
@@ -207,6 +197,8 @@
 				90BF02B61BE74A6A006A84C0 /* BasicViewController.m */,
 				90BF02A11BE71305006A84C0 /* MainTabBarViewController.h */,
 				90BF02A21BE71305006A84C0 /* MainTabBarViewController.m */,
+				90BF02B11BE74585006A84C0 /* BasicNavigationController.h */,
+				90BF02B21BE74585006A84C0 /* BasicNavigationController.m */,
 			);
 			name = BasicViewController;
 			sourceTree = "<group>";
