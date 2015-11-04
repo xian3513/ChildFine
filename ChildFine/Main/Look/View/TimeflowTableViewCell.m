@@ -7,7 +7,7 @@
 //
 
 #import "TimeflowTableViewCell.h"
-#import "UILabel+Type.h"
+
 @implementation TimeflowTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -34,6 +34,14 @@
             tmp.layer.borderWidth = 1;
         }
     }
+}
+
+- (void)setName:(NSString *)name {
+    self.upLab.text = name;
+}
+
+- (void)setPrompt:(NSString *)prompt {
+    self.downLab.text = prompt;
 }
 - (void)awakeFromNib {
     // Initialization code

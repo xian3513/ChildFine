@@ -14,7 +14,8 @@
     
     RootHeaderView *_headerView;
     UITableView *_tabView;
-    NSArray *nameArray;
+    NSArray *_nameArray;
+    NSArray *_promptArray;
 }
 
 @property (nonatomic,strong) UIView *tabViewHeaderView;
@@ -32,7 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
+    _nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
+    _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120)];
@@ -42,9 +44,11 @@
     _headerView.childClass = @"xisT";
     _headerView.flowerCount = 123;
     
+    //tabView
     _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
     _tabView.delegate = self;
     _tabView.dataSource = self;
+    _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_One"];
     [_tabView registerNib:[UINib nibWithNibName:@"LookTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_Two"];
     _tabView.backgroundColor = RGBA(235, 235, 235, 1);
@@ -68,25 +72,59 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 235;
+    
+    NSInteger height = 100;
+    switch (indexPath.row) {
+        case 0:{
+            height = 233;
+            break;
+        }
+        case 3:{
+            height = 125;
+            break;
+        }
+    }
+    return height;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = nil;
+    BasicTableViewCell *cell = nil;
     if(indexPath.row == 0){
        TimeflowTableViewCell *one = [tableView dequeueReusableCellWithIdentifier:@"lookCell_One"];
-        [one setContentViewAndLable];
+        
         cell = one;
     } else {
         LookTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
-//        TimeflowTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
+        two.blackLineView.hidden = NO;
+        two.downLab.hidden = NO;
         cell = two;
     }
+     [cell setContentViewAndLable];
+    cell.name = [_nameArray objectAtIndex:indexPath.row];
+    cell.prompt = [_promptArray objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
- 
+    switch (indexPath.row) {
+        case 0:{
+         break;
+        }
+        case 1:{
+            break;
+        }
+        case 2:{
+            break;
+        }
+        case 3:{
+            break;
+        }
+        case 4:{
+            break;
+        }
+    }
+    
 }
 - (void)buttonPress:(UIBarButtonItem *)item {
     if(item.tag == 0){ //QRCode

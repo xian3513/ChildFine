@@ -17,5 +17,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *downLab;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 
-- (void)setContentViewAndLable;
+
 @end

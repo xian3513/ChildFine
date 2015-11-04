@@ -9,6 +9,8 @@
 #import "BasicTableViewCell.h"
 
 @interface LookTableViewCell : BasicTableViewCell
+@property (weak, nonatomic) IBOutlet UIView *backgroundCellView;
+@property (weak, nonatomic) IBOutlet UIView *blackLineView;
 @property (weak, nonatomic) IBOutlet UILabel *upLab;
 @property (weak, nonatomic) IBOutlet UILabel *downLab;
 
