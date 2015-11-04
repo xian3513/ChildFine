@@ -23,6 +23,7 @@
 		907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */; };
 		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; };
 		907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C61BE8C7200076CBB2 /* LearnViewController.m */; };
+		90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550951BE9B51600CFE9F4 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -61,6 +62,8 @@
 		907771C31BE8C6F90076CBB2 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		907771C51BE8C7200076CBB2 /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
 		907771C61BE8C7200076CBB2 /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
+		90B550941BE9B51600CFE9F4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		90B550951BE9B51600CFE9F4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -234,6 +237,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		90B550931BE9B50F00CFE9F4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				90B550941BE9B51600CFE9F4 /* Reachability.h */,
+				90B550951BE9B51600CFE9F4 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		90BF025E1BE7002D006A84C0 = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +293,7 @@
 		90BF02981BE711EF006A84C0 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				90B550931BE9B50F00CFE9F4 /* Reachability */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -434,6 +447,7 @@
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
 				907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */,
 				907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */,
+				90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */,
 				907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
