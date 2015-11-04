@@ -30,7 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"");
+   NSLog(@"lookViewController:%@",self.view);
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 110)];
@@ -53,7 +53,7 @@
 #pragma -get
 - (UIView *)tabViewHeaderView {
     if(!_tabViewHeaderView) {
-        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 30)];
+        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 20)];
         _tabViewHeaderView.backgroundColor = [UIColor clearColor];
     }
     return _tabViewHeaderView;
@@ -65,7 +65,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    return 240;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

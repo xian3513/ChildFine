@@ -18,14 +18,6 @@
 }
 - (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
-//        NSInteger width = frame.size.width;
-//        NSInteger height = frame.size.height;
-//        NSInteger pace = 10;
-//        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(pace, 0, width-2*pace, height)];
-//        backgroundView.backgroundColor = [UIColor whiteColor];
-//        [self addSubview:backgroundView];
-       
-
     }
     return self;
 }
@@ -33,8 +25,8 @@
 - (void)setContentViewAndLable {
      [self.upLab familyLableSmallfontAndGrayColor];
     [self.downLab familyLableSmallfontAndGrayColor];
-    self.backgroundCellView.layer.borderColor = RGBA(193,193, 193, 1).CGColor;
-    self.backgroundCellView.layer.borderWidth = 1;
+    self.backgroundCellView.layer.borderColor = RGBA(224,224, 224, 1).CGColor;
+    self.backgroundCellView.layer.borderWidth = 0.5;
 }
 - (void)awakeFromNib {
     // Initialization code

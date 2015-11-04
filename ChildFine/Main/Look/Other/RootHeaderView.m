@@ -68,7 +68,7 @@
     _flowerLab = [UILabel FamilyLableSmallFontWithFrame:CGRectMake(0, 0, D,D)];
     _flowerLab.layer.masksToBounds = YES;
     _flowerLab.center = CGPointMake(width/2, height/2);
-    _flowerLab.backgroundColor = [UIColor redColor];
+    _flowerLab.backgroundColor = RGBA(248, 57, 43, 1);
     _flowerLab.numberOfLines = 2;
     _flowerLab.textAlignment = NSTextAlignmentCenter;
     _flowerLab.layer.cornerRadius = 20.0/40.0*D; //做Radius的适配
@@ -77,7 +77,7 @@
     _collectionLab = [UILabel FamilyLableSmallFontWithFrame:CGRectMake(0, 0, D, D)];
     _collectionLab.layer.masksToBounds = YES;
     _collectionLab.center = CGPointMake(_flowerLab.left/2-D/4, height/2);
-    _collectionLab.backgroundColor = [UIColor purpleColor];
+    _collectionLab.backgroundColor = RGBA(136, 95, 225, 1);
     _collectionLab.numberOfLines = 2;
     _collectionLab.textAlignment = NSTextAlignmentCenter;
     _collectionLab.layer.cornerRadius = 20.0/40.0*D;
@@ -86,7 +86,7 @@
     _leafLab = [UILabel FamilyLableSmallFontWithFrame:CGRectMake(0, 0, D, D)];
     _leafLab.layer.masksToBounds = YES;
     _leafLab.center = CGPointMake((width - _flowerLab.right)/2+_flowerLab.right+D/4, height/2);
-    _leafLab.backgroundColor = [UIColor greenColor];
+    _leafLab.backgroundColor = RGBA(125, 194, 66, 1);
     _leafLab.numberOfLines = 2;
     _leafLab.textAlignment = NSTextAlignmentCenter;
     _leafLab.layer.cornerRadius = 20.0/40.0*D;

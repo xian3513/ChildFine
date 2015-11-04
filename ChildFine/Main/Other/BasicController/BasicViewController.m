@@ -54,7 +54,7 @@
         imageView.image = [UIImage imageNamed:@"default_head"];
         imageView.layer.cornerRadius = 20;
         imageView.layer.borderWidth = 2;
-        imageView.layer.borderColor = [UIColor greenColor].CGColor;
+        imageView.layer.borderColor = RGBA(137, 232, 211, 1).CGColor;
         imageView.layer.masksToBounds = YES;
         imageView.frame = CGRectMake(0, 0, 44, 40);
     }else {
