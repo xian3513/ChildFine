@@ -7,8 +7,10 @@
 //
 
 #import "LearnViewController.h"
-
-@interface LearnViewController ()
+#import "RootHeaderView.h"
+@interface LearnViewController () {
+    RootHeaderView *_headerView;
+}
 
 @end
 
@@ -22,7 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
+    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:NO];
+    [self.view addSubview:_headerView];
+    _headerView.name = @"张";
+    _headerView.age = 3;
+    _headerView.childClass = @"xisT";
     
 }
 

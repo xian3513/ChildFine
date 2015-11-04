@@ -37,7 +37,7 @@
     _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
-    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120)];
+    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
     [self.view addSubview:_headerView];
     _headerView.name = @"张";
     _headerView.age = 3;

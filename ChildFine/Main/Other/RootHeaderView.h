@@ -20,4 +20,5 @@
 @property (nonatomic) NSInteger flowerCount;
 @property (nonatomic) NSInteger collectionCount;
 
+- (instancetype)initWithFrame:(CGRect)frame isLook:(BOOL)isLook;
 @end

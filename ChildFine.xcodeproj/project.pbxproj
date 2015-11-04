@@ -12,7 +12,6 @@
 		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; };
 		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; };
 		907771961BE861270076CBB2 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771951BE861270076CBB2 /* LookViewController.m */; };
-		9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */; };
 		907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771A01BE87D4B0076CBB2 /* UIView+Frame.m */; };
 		907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 907771A31BE87E820076CBB2 /* CommonMacros.h */; };
 		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; };
@@ -27,6 +26,7 @@
 		90B5509A1BE9E91400CFE9F4 /* LookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		90B5509B1BE9E91400CFE9F4 /* LookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		90B550A11BEA0C3800CFE9F4 /* RootHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550A01BEA0C3700CFE9F4 /* RootHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -45,8 +45,6 @@
 		9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		907771941BE861270076CBB2 /* LookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
 		907771951BE861270076CBB2 /* LookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
-		9077719B1BE87CBA0076CBB2 /* RootHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootHeaderView.h; sourceTree = "<group>"; };
-		9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootHeaderView.m; sourceTree = "<group>"; };
 		9077719F1BE87D4B0076CBB2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		907771A01BE87D4B0076CBB2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		907771A31BE87E820076CBB2 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookTableViewCell.xib; sourceTree = "<group>"; };
 		90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
 		90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
+		90B5509F1BEA0C3700CFE9F4 /* RootHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootHeaderView.h; sourceTree = "<group>"; };
+		90B550A01BEA0C3700CFE9F4 /* RootHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootHeaderView.m; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,8 +142,6 @@
 		907771971BE8614D0076CBB2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				9077719B1BE87CBA0076CBB2 /* RootHeaderView.h */,
-				9077719C1BE87CBA0076CBB2 /* RootHeaderView.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -366,6 +364,8 @@
 		90BF029F1BE71265006A84C0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				90B5509F1BEA0C3700CFE9F4 /* RootHeaderView.h */,
+				90B550A01BEA0C3700CFE9F4 /* RootHeaderView.m */,
 				907771AA1BE885830076CBB2 /* BasicView */,
 				907771871BE8600E0076CBB2 /* BasicController */,
 			);
@@ -448,11 +448,11 @@
 				9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */,
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
 				907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */,
-				9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */,
 				90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */,
 				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
+				90B550A11BEA0C3800CFE9F4 /* RootHeaderView.m in Sources */,
 				90B5509A1BE9E91400CFE9F4 /* LookTableViewCell.m in Sources */,
 				9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */,
 				907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */,
