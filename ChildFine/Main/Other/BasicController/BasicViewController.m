@@ -38,11 +38,21 @@
 
 - (void)addPromptAndQRCodeOnRightBarButtonItemWith:(UIViewController *)target action:(SEL)action {
     
-    UIBarButtonItem *QRCodeButton = [[UIBarButtonItem alloc]
-                                     initWithImage:[UIImage imageNamed:@"tabbar_learn"] style:UIBarButtonItemStylePlain target:target action:action];
-    UIBarButtonItem *promptButton = [[UIBarButtonItem alloc]
-                                     initWithImage:[UIImage imageNamed:@"tabbar_learn"] style:UIBarButtonItemStylePlain target:target action:action];
-    NSArray *buttonArray = [[NSArray alloc] initWithObjects:QRCodeButton,promptButton, nil];
+    NSInteger width = 20;
+    NSInteger height = 20;
+    UIButton *QRbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [QRbutton setBackgroundImage:[UIImage imageNamed:@"img_mark"] forState:UIControlStateNormal];
+    QRbutton.frame = CGRectMake(0, 0, width, height);
+   
+    UIButton *promptButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [promptButton setBackgroundImage:[UIImage imageNamed:@"img_mark"] forState:UIControlStateNormal];
+    promptButton.frame = CGRectMake(0, 0, width, height);
+    [QRbutton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [promptButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+     UIBarButtonItem *QRCodeItem = [[UIBarButtonItem alloc] initWithCustomView:QRbutton];
+    UIBarButtonItem *promptItem = [[UIBarButtonItem alloc] initWithCustomView:promptButton];
+    NSArray *buttonArray = [[NSArray alloc] initWithObjects:QRCodeItem,promptItem, nil];
     self.navigationItem.rightBarButtonItems = buttonArray;
     
 }
@@ -52,16 +62,16 @@
     UIImageView *imageView = [[UIImageView alloc]init];
     if(isHeader){
         imageView.image = [UIImage imageNamed:@"default_head"];
-        imageView.layer.cornerRadius = 20;
+        imageView.layer.cornerRadius = 18;
         imageView.layer.borderWidth = 2;
         imageView.layer.borderColor = RGBA(137, 232, 211, 1).CGColor;
         imageView.layer.masksToBounds = YES;
-        imageView.frame = CGRectMake(0, 0, 44, 40);
+        imageView.frame = CGRectMake(0, 0, 38, 38);
     }else {
         UIImage *image = [UIImage imageNamed:@"childPlus"];
         imageView.image = image;
         imageView.frame = CGRectMake(0, 0, image.size.width, image.size.height);
-        NSLog(@"size.width:%f",image.size.width);
+        //NSLog(@"size.width:%f",image.size.width);
     }
     
     UIBarButtonItem *iconImage = [[UIBarButtonItem alloc]initWithCustomView:imageView];

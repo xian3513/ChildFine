@@ -11,6 +11,7 @@
 @interface BasicNavigationController : UINavigationController
 
 - (void)cancelNavigationBarTranslucentAndBottomBlackLine;
+
 @end
 
 @interface UIViewController (MyNavigationController)
