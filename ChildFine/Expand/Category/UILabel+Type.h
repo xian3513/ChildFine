@@ -16,5 +16,6 @@
 + (UILabel *)FamilyLableSmallFontWithFrame:(CGRect)frame;
 + (UILabel *)FamilyLableMiddleFontWithFrame:(CGRect)frame;
 
+- (void)familyLableSmallfontAndGrayColor;
 - (void)setAttributedStringLinesSpaceWithString:(NSString *)string space:(NSInteger)space;
 @end

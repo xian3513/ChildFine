@@ -10,6 +10,10 @@
 
 @implementation UILabel (Type)
 
+- (void)familyLableSmallfontAndGrayColor {
+    self.textColor = RGBA(177, 177, 177, 1);
+    self.font = [UIFont systemFontOfSize:12];
+}
 - (void)setAttributedStringLinesSpaceWithString:(NSString *)string space:(NSInteger)space{
     NSMutableAttributedString * attributedString1 = [[NSMutableAttributedString alloc] initWithString:string];
     NSMutableParagraphStyle * paragraphStyle1 = [[NSMutableParagraphStyle alloc] init];

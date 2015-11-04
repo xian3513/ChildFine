@@ -44,7 +44,7 @@
     _tabView.delegate = self;
     _tabView.dataSource = self;
     [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell"];
-    _tabView.backgroundColor = [UIColor grayColor];
+    _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
     
@@ -69,9 +69,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TimeflowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lookCell"];
-    
-    return cell;
+//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+    if(indexPath.row == 0){
+       TimeflowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lookCell"];
+        [cell lableFontAndTextColor];
+        return cell;
+    } else {
+    return   [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
 }
 - (void)buttonPress:(UIBarButtonItem *)item {
     if(item.tag == 0){ //QRCode

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface TimeflowTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViewArray;
 
+@property (weak, nonatomic) IBOutlet UILabel *upLab;
+@property (weak, nonatomic) IBOutlet UILabel *downLab;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
+
+- (void)lableFontAndTextColor;
 @end

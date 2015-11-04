@@ -7,7 +7,7 @@
 //
 
 #import "TimeflowTableViewCell.h"
-
+#import "UILabel+Type.h"
 @implementation TimeflowTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -24,10 +24,15 @@
 //        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(pace, 0, width-2*pace, height)];
 //        backgroundView.backgroundColor = [UIColor whiteColor];
 //        [self addSubview:backgroundView];
+       
+
     }
     return self;
 }
 
+- (void)lableFontAndTextColor {
+     [self.upLab familyLableSmallfontAndGrayColor];
+}
 - (void)awakeFromNib {
     // Initialization code
 }
