@@ -33,7 +33,9 @@
         NSInteger width = frame.size.width;
         [self initUpViewWithWidth:width height:height/2];
         [self initBelowViewWithWidth:width height:height/2];
-      
+        UIImageView *huabianImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"huabian"]];
+        huabianImageView.frame = CGRectMake(0, height/2-2, width, 4);
+        [self addSubview:huabianImageView];
         //初始化数据
         self.flowerCount = 0;
         self.collectionCount = 0;
@@ -53,9 +55,13 @@
     _ageAndOnlineDaysLab = [UILabel FamilyLableSmallFontWithFrame:CGRectMake(_namelab.left, _namelab.bottom-5, _namelab.width, _upImageView.height/2)];
     [_upImageView addSubview:_ageAndOnlineDaysLab];
     
-    _childClassLab = [UILabel FamilyLableMiddleFontWithFrame:CGRectMake(SCREEN_WIDTH-150, 0, 120, _upImageView.height/2)];
+    _childClassLab = [UILabel FamilyLableMiddleFontWithFrame:CGRectMake(SCREEN_WIDTH-160, 0, 120, _upImageView.height/2)];
     _childClassLab.textAlignment = NSTextAlignmentRight;
     [_upImageView addSubview:_childClassLab];
+    
+    UIImageView *QRImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"QRCode"]];
+    QRImageView.frame = CGRectMake(_childClassLab.right+5, _childClassLab.top+8, 20, 20);
+    [_upImageView addSubview:QRImageView];
 }
 
 - (void)initBelowViewWithWidth:(NSInteger)width height:(NSInteger)height {
@@ -118,18 +124,19 @@
 - (void)setFlowerCount:(NSInteger)flowerCount {
     _flowerCount = flowerCount;
     NSString *str = [NSString stringWithFormat:@"%ld\n红花",flowerCount];
-    [_flowerLab setAttributedStringLinesSpaceWithString:str space:2];
+    
+    [_flowerLab setAttributedStringLinesSpaceWithString:str space:0];
 }
 
 - (void)setCollectionCount:(NSInteger)collectionCount {
     _collectionCount = collectionCount;
     NSString *str = [NSString stringWithFormat:@"%ld\n收藏",collectionCount];
-    [_collectionLab setAttributedStringLinesSpaceWithString:str space:2];
+    [_collectionLab setAttributedStringLinesSpaceWithString:str space:0];
 }
 
 - (void)setLeafCount:(NSInteger)leafCount {
     _leafCount = leafCount;
     NSString *str = [NSString stringWithFormat:@"%ld\n绿叶",leafCount];
-    [_leafLab setAttributedStringLinesSpaceWithString:str space:2];
+    [_leafLab setAttributedStringLinesSpaceWithString:str space:0];
 }
 @end

@@ -33,12 +33,12 @@
    NSLog(@"lookViewController:%@",self.view);
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
-    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 110)];
+    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120)];
     [self.view addSubview:_headerView];
     _headerView.name = @"张";
     _headerView.age = 3;
     _headerView.childClass = @"xisT";
-    //_headerView.flowerCount = 0;
+    _headerView.flowerCount = 123;
     
     _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
     _tabView.delegate = self;
@@ -53,7 +53,7 @@
 #pragma -get
 - (UIView *)tabViewHeaderView {
     if(!_tabViewHeaderView) {
-        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 20)];
+        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 15)];
         _tabViewHeaderView.backgroundColor = [UIColor clearColor];
     }
     return _tabViewHeaderView;
@@ -65,7 +65,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 240;
+    return 235;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
