@@ -24,6 +24,9 @@
 		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; };
 		907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C61BE8C7200076CBB2 /* LearnViewController.m */; };
 		90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550951BE9B51600CFE9F4 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		90B5509A1BE9E91400CFE9F4 /* LookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		90B5509B1BE9E91400CFE9F4 /* LookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -64,6 +67,11 @@
 		907771C61BE8C7200076CBB2 /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
 		90B550941BE9B51600CFE9F4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		90B550951BE9B51600CFE9F4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		90B550971BE9E91400CFE9F4 /* LookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookTableViewCell.h; sourceTree = "<group>"; };
+		90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookTableViewCell.m; sourceTree = "<group>"; };
+		90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookTableViewCell.xib; sourceTree = "<group>"; };
+		90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
+		90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +121,11 @@
 				907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */,
 				907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */,
 				904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */,
+				90B550971BE9E91400CFE9F4 /* LookTableViewCell.h */,
+				90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */,
+				90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */,
+				90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */,
+				90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +431,7 @@
 			files = (
 				90BF02771BE7002D006A84C0 /* Assets.xcassets in Resources */,
 				907771A91BE8841D0076CBB2 /* scan.wav in Resources */,
+				90B5509B1BE9E91400CFE9F4 /* LookTableViewCell.xib in Resources */,
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
 				904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */,
 				907771A71BE884070076CBB2 /* message.wav in Resources */,
@@ -435,9 +449,11 @@
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
 				907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */,
 				9077719D1BE87CBA0076CBB2 /* RootHeaderView.m in Sources */,
+				90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */,
 				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
+				90B5509A1BE9E91400CFE9F4 /* LookTableViewCell.m in Sources */,
 				9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */,
 				907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */,
 				907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */,

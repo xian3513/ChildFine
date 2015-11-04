@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="lookCell" rowHeight="314" id="KGk-i7-Jjw" customClass="TimeflowTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="lookCell_One" rowHeight="314" id="KGk-i7-Jjw" customClass="TimeflowTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="378" height="314"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -20,25 +20,25 @@
                         <rect key="frame" x="14" y="13" width="350" height="287"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gP-Q4-E5f" userLabel="middleView">
-                                <rect key="frame" x="0.0" y="41" width="350" height="204"/>
+                                <rect key="frame" x="0.0" y="40" width="350" height="201"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6l-tg-pkI" userLabel="rightImageView">
-                                        <rect key="frame" x="178" y="0.0" width="172" height="204"/>
+                                        <rect key="frame" x="178" y="0.0" width="167" height="201"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l6a-9h-En8" userLabel="up_left_image">
-                                                <rect key="frame" x="0.0" y="0.0" width="83" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="98"/>
                                                 <animations/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bf8-Eh-Aft" userLabel="up_right_Image">
-                                                <rect key="frame" x="88" y="0.0" width="84" height="100"/>
+                                                <rect key="frame" x="86" y="0.0" width="81" height="98"/>
                                                 <animations/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1w6-UU-sSj" userLabel="down_left_image">
-                                                <rect key="frame" x="0.0" y="105" width="83" height="99"/>
+                                                <rect key="frame" x="0.0" y="103" width="81" height="98"/>
                                                 <animations/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-zg-K5e" userLabel="down_right_image">
-                                                <rect key="frame" x="88" y="105" width="84" height="99"/>
+                                                <rect key="frame" x="86" y="103" width="81" height="98"/>
                                                 <animations/>
                                             </imageView>
                                         </subviews>
@@ -63,31 +63,31 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-ht-hhn">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="204"/>
+                                        <rect key="frame" x="5" y="0.0" width="168" height="201"/>
                                         <animations/>
                                     </imageView>
                                 </subviews>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="g6l-tg-pkI" secondAttribute="bottom" id="Bgk-Ef-UOv"/>
-                                    <constraint firstAttribute="trailing" secondItem="g6l-tg-pkI" secondAttribute="trailing" id="M0n-nR-4Bh"/>
+                                    <constraint firstAttribute="trailing" secondItem="g6l-tg-pkI" secondAttribute="trailing" constant="5" id="M0n-nR-4Bh"/>
                                     <constraint firstItem="8H5-ht-hhn" firstAttribute="width" secondItem="g6l-tg-pkI" secondAttribute="width" id="V1c-rd-rRc"/>
                                     <constraint firstAttribute="bottom" secondItem="8H5-ht-hhn" secondAttribute="bottom" id="qer-nM-m2J"/>
                                     <constraint firstItem="8H5-ht-hhn" firstAttribute="top" secondItem="2gP-Q4-E5f" secondAttribute="top" id="qnH-hj-2LY"/>
                                     <constraint firstItem="g6l-tg-pkI" firstAttribute="top" secondItem="2gP-Q4-E5f" secondAttribute="top" id="tFc-ox-aYu"/>
                                     <constraint firstItem="g6l-tg-pkI" firstAttribute="leading" secondItem="8H5-ht-hhn" secondAttribute="trailing" constant="5" id="ukB-pE-B9V"/>
-                                    <constraint firstItem="8H5-ht-hhn" firstAttribute="leading" secondItem="2gP-Q4-E5f" secondAttribute="leading" id="yBU-pM-TnX"/>
+                                    <constraint firstItem="8H5-ht-hhn" firstAttribute="leading" secondItem="2gP-Q4-E5f" secondAttribute="leading" constant="5" id="yBU-pM-TnX"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多照片，快来珍藏吧 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqX-DP-744" userLabel="downLable">
-                                <rect key="frame" x="0.0" y="246" width="345" height="41"/>
+                                <rect key="frame" x="0.0" y="247" width="345" height="40"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时光流" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtg-mi-Xid" userLabel="upLabel">
-                                <rect key="frame" x="29" y="0.0" width="321" height="41"/>
+                                <rect key="frame" x="29" y="0.0" width="321" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -103,7 +103,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbZ-9o-iPU" userLabel="blackLineView">
-                                <rect key="frame" x="0.0" y="245" width="350" height="1"/>
+                                <rect key="frame" x="0.0" y="246" width="350" height="1"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -118,7 +118,7 @@
                             <constraint firstAttribute="trailing" secondItem="mtg-mi-Xid" secondAttribute="trailing" id="4Qm-Ll-1ew"/>
                             <constraint firstAttribute="bottom" secondItem="cqX-DP-744" secondAttribute="bottom" id="63a-F5-7Mp"/>
                             <constraint firstItem="mtg-mi-Xid" firstAttribute="height" secondItem="2gP-Q4-E5f" secondAttribute="height" multiplier="0.2" id="6Be-kD-P4Y"/>
-                            <constraint firstItem="XbZ-9o-iPU" firstAttribute="top" secondItem="2gP-Q4-E5f" secondAttribute="bottom" id="Hf2-WV-Dd9"/>
+                            <constraint firstItem="XbZ-9o-iPU" firstAttribute="top" secondItem="2gP-Q4-E5f" secondAttribute="bottom" constant="5" id="Hf2-WV-Dd9"/>
                             <constraint firstItem="2gP-Q4-E5f" firstAttribute="leading" secondItem="3Ip-bp-vyV" secondAttribute="leading" id="UCh-W7-GqO"/>
                             <constraint firstItem="cqX-DP-744" firstAttribute="top" secondItem="XbZ-9o-iPU" secondAttribute="bottom" id="Wpz-cy-6y9"/>
                             <constraint firstItem="mtg-mi-Xid" firstAttribute="top" secondItem="3Ip-bp-vyV" secondAttribute="top" id="bSx-Vg-R27"/>

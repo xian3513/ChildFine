@@ -9,10 +9,12 @@
 #import "LookViewController.h"
 #import "RootHeaderView.h"
 #import "TimeflowTableViewCell.h"
+#import "LookTableViewCell.h"
 @interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     RootHeaderView *_headerView;
     UITableView *_tabView;
+    NSArray *nameArray;
 }
 
 @property (nonatomic,strong) UIView *tabViewHeaderView;
@@ -30,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   NSLog(@"lookViewController:%@",self.view);
+    nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120)];
@@ -43,7 +45,8 @@
     _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
     _tabView.delegate = self;
     _tabView.dataSource = self;
-    [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell"];
+    [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_One"];
+    [_tabView registerNib:[UINib nibWithNibName:@"LookTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_Two"];
     _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
@@ -69,14 +72,17 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+    UITableViewCell *cell = nil;
     if(indexPath.row == 0){
-       TimeflowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lookCell"];
-        [cell setContentViewAndLable];
-        return cell;
+       TimeflowTableViewCell *one = [tableView dequeueReusableCellWithIdentifier:@"lookCell_One"];
+        [one setContentViewAndLable];
+        cell = one;
     } else {
-    return   [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+        LookTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
+//        TimeflowTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
+        cell = two;
     }
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

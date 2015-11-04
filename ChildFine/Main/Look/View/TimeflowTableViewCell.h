@@ -6,9 +6,9 @@
 //  Copyright © 2015年 xian. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BasicTableViewCell.h"
 
-@interface TimeflowTableViewCell : UITableViewCell
+@interface TimeflowTableViewCell : BasicTableViewCell
 @property (weak, nonatomic) IBOutlet UIView *backgroundCellView;
 
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViewArray;
