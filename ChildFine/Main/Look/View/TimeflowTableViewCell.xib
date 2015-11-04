@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="378" height="313"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-bp-vyV" userLabel="backgroundView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-bp-vyV" userLabel="backgroundCellView">
                         <rect key="frame" x="14" y="13" width="350" height="287"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gP-Q4-E5f" userLabel="middleView">
@@ -144,7 +144,7 @@
             </tableViewCellContentView>
             <animations/>
             <connections>
-                <outlet property="backgroundView" destination="3Ip-bp-vyV" id="MeZ-Te-Rbi"/>
+                <outlet property="backgroundCellView" destination="3Ip-bp-vyV" id="WL7-Ub-ilT"/>
                 <outlet property="downLab" destination="cqX-DP-744" id="CWy-gU-yMp"/>
                 <outlet property="logoImageView" destination="H7J-6v-NkS" id="oIz-Gu-GfG"/>
                 <outlet property="upLab" destination="mtg-mi-Xid" id="pLC-aG-boL"/>

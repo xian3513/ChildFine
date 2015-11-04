@@ -72,7 +72,7 @@
 //    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
     if(indexPath.row == 0){
        TimeflowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lookCell"];
-        [cell lableFontAndTextColor];
+        [cell setContentViewAndLable];
         return cell;
     } else {
     return   [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];

@@ -30,8 +30,11 @@
     return self;
 }
 
-- (void)lableFontAndTextColor {
+- (void)setContentViewAndLable {
      [self.upLab familyLableSmallfontAndGrayColor];
+    [self.downLab familyLableSmallfontAndGrayColor];
+    self.backgroundCellView.layer.borderColor = RGBA(193,193, 193, 1).CGColor;
+    self.backgroundCellView.layer.borderWidth = 1;
 }
 - (void)awakeFromNib {
     // Initialization code
