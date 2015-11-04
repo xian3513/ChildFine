@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     tabcellHeight = 40;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     _nameArray = [[NSArray alloc]initWithObjects:@"xis",@"",@"我的宝贝",@"我要缴费",@"",@"设置", nil];
     _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, tabcellHeight*6) style:UITableViewStylePlain];
     _tabView.delegate = self;
