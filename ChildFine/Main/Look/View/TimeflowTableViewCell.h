@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TimeflowTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIView *backgroundView;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViewArray;
 
 @property (weak, nonatomic) IBOutlet UILabel *upLab;

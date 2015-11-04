@@ -144,6 +144,7 @@
             </tableViewCellContentView>
             <animations/>
             <connections>
+                <outlet property="backgroundView" destination="3Ip-bp-vyV" id="MeZ-Te-Rbi"/>
                 <outlet property="downLab" destination="cqX-DP-744" id="CWy-gU-yMp"/>
                 <outlet property="logoImageView" destination="H7J-6v-NkS" id="oIz-Gu-GfG"/>
                 <outlet property="upLab" destination="mtg-mi-Xid" id="pLC-aG-boL"/>
