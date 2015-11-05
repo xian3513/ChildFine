@@ -33,6 +33,7 @@
     _tabView.delegate = self;
     _tabView.dataSource = self;
     _tabView.scrollEnabled = NO;
+    //_tabView.separatorColor = RGBA(235, 235, 235, 1);
     _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     [self.view addSubview:_tabView];
     if ([_tabView respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -50,20 +51,25 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return tabcellHeight;
+    if(indexPath.row != 1 && indexPath.row != 4){
+        return 42;
+    }
+    return 35;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
    
-    
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsZero];
+    if(indexPath.row != 2){
+        if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+            [cell setSeparatorInset:UIEdgeInsetsZero];
+        }
+        
+        if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+            [cell setLayoutMargins:UIEdgeInsetsZero];
+        }
     }
     
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
     
     if(indexPath.row != 1 && indexPath.row != 4){
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

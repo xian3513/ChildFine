@@ -72,7 +72,7 @@ static NSString *learn_showLab_str = @"宝贝佳佑一个神秘的智慧宝盒�
     [_upImageView addSubview:_childClassLab];
     
     UIImageView *QRImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"QRCode"]];
-    QRImageView.frame = CGRectMake(_childClassLab.right+5, _childClassLab.top+8, 20, 20);
+    QRImageView.frame = CGRectMake(_childClassLab.right+5, _childClassLab.top+8, 21, 21);
     [_upImageView addSubview:QRImageView];
 }
 

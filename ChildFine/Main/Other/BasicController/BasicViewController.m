@@ -39,21 +39,23 @@
 
 - (void)addPromptAndQRCodeOnRightBarButtonItemWith:(UIViewController *)target action:(SEL)action {
     
-    NSInteger width = 20;
-    NSInteger height = 20;
+    NSInteger width = 14;
+    NSInteger height = 16;
     UIButton *QRbutton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [QRbutton setBackgroundImage:[UIImage imageNamed:@"img_mark"] forState:UIControlStateNormal];
-    QRbutton.frame = CGRectMake(0, 0, width, height);
+    [QRbutton setBackgroundImage:[UIImage imageNamed:@"scan"] forState:UIControlStateNormal];
+    QRbutton.frame = CGRectMake(0, 0, 16, 16);
    
     UIButton *promptButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [promptButton setBackgroundImage:[UIImage imageNamed:@"img_mark"] forState:UIControlStateNormal];
-    promptButton.frame = CGRectMake(0, 0, width, height);
+    [promptButton setBackgroundImage:[UIImage imageNamed:@"bell"] forState:UIControlStateNormal];
+    promptButton.frame = CGRectMake(20, 0, width, height);
     [QRbutton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [promptButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
+    UIBarButtonItem* fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil]; fixedSpace.width = 20;
+    
      UIBarButtonItem *QRCodeItem = [[UIBarButtonItem alloc] initWithCustomView:QRbutton];
     UIBarButtonItem *promptItem = [[UIBarButtonItem alloc] initWithCustomView:promptButton];
-    NSArray *buttonArray = [[NSArray alloc] initWithObjects:QRCodeItem,promptItem, nil];
+    NSArray *buttonArray = [[NSArray alloc] initWithObjects:QRCodeItem,fixedSpace,promptItem, nil];
     self.navigationItem.rightBarButtonItems = buttonArray;
     
 }

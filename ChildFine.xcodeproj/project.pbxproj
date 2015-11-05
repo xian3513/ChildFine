@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */; };
+		9071B5F01BEB30F7004C78A1 /* TimeflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771891BE8600E0076CBB2 /* BasicNavigationController.m */; };
 		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; };
 		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeflowTableViewCell.xib; sourceTree = "<group>"; };
+		9071B5EE1BEB30F7004C78A1 /* TimeflowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeflowViewController.h; sourceTree = "<group>"; };
+		9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeflowViewController.m; sourceTree = "<group>"; };
 		907771881BE8600E0076CBB2 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
 		907771891BE8600E0076CBB2 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
 		9077718A1BE8600E0076CBB2 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 			children = (
 				907771941BE861270076CBB2 /* LookViewController.h */,
 				907771951BE861270076CBB2 /* LookViewController.m */,
+				9071B5EE1BEB30F7004C78A1 /* TimeflowViewController.h */,
+				9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */,
 				90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */,
 				907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */,
+				9071B5F01BEB30F7004C78A1 /* TimeflowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
