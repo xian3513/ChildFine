@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"themeBackground"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationBar.titleTextAttributes = @{UITextAttributeTextColor: [UIColor whiteColor]};
 }
 
 - (void)cancelNavigationBarTranslucentAndBottomBlackLine {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */; };
 		9071B5F01BEB30F7004C78A1 /* TimeflowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9071B5F41BEB34C1004C78A1 /* FlowContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9071B5F21BEB34C1004C78A1 /* FlowContentTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9071B5F71BEB38EB004C78A1 /* FlowContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9071B5F61BEB38EB004C78A1 /* FlowContentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771891BE8600E0076CBB2 /* BasicNavigationController.m */; };
 		9077718F1BE8600E0076CBB2 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718B1BE8600E0076CBB2 /* BasicViewController.m */; };
 		907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077718D1BE8600E0076CBB2 /* MainTabBarViewController.m */; };
@@ -40,6 +42,9 @@
 		904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeflowTableViewCell.xib; sourceTree = "<group>"; };
 		9071B5EE1BEB30F7004C78A1 /* TimeflowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeflowViewController.h; sourceTree = "<group>"; };
 		9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeflowViewController.m; sourceTree = "<group>"; };
+		9071B5F11BEB34C1004C78A1 /* FlowContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowContentTableViewCell.h; sourceTree = "<group>"; };
+		9071B5F21BEB34C1004C78A1 /* FlowContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowContentTableViewCell.m; sourceTree = "<group>"; };
+		9071B5F61BEB38EB004C78A1 /* FlowContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowContentTableViewCell.xib; sourceTree = "<group>"; };
 		907771881BE8600E0076CBB2 /* BasicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicNavigationController.h; sourceTree = "<group>"; };
 		907771891BE8600E0076CBB2 /* BasicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavigationController.m; sourceTree = "<group>"; };
 		9077718A1BE8600E0076CBB2 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
@@ -129,6 +134,9 @@
 				90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */,
 				90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */,
 				90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */,
+				9071B5F11BEB34C1004C78A1 /* FlowContentTableViewCell.h */,
+				9071B5F21BEB34C1004C78A1 /* FlowContentTableViewCell.m */,
+				9071B5F61BEB38EB004C78A1 /* FlowContentTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +446,7 @@
 				907771A91BE8841D0076CBB2 /* scan.wav in Resources */,
 				90B5509B1BE9E91400CFE9F4 /* LookTableViewCell.xib in Resources */,
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
+				9071B5F71BEB38EB004C78A1 /* FlowContentTableViewCell.xib in Resources */,
 				904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */,
 				907771A71BE884070076CBB2 /* message.wav in Resources */,
 			);
@@ -455,6 +464,7 @@
 				907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */,
 				90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */,
 				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
+				9071B5F41BEB34C1004C78A1 /* FlowContentTableViewCell.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
 				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
 				90B550A11BEA0C3800CFE9F4 /* RootHeaderView.m in Sources */,

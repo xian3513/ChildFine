@@ -10,6 +10,7 @@
 #import "RootHeaderView.h"
 #import "TimeflowTableViewCell.h"
 #import "LookTableViewCell.h"
+#import "TimeflowViewController.h"
 @interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     RootHeaderView *_headerView;
@@ -107,8 +108,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *viewController = nil;
     switch (indexPath.row) {
         case 0:{
+            TimeflowViewController *controller = [[TimeflowViewController alloc]init];
+            viewController = controller;
          break;
         }
         case 1:{
@@ -124,6 +128,7 @@
             break;
         }
     }
+    [self.navigationController pushViewController:viewController animated:YES];
     
 }
 - (void)buttonPress:(UIBarButtonItem *)item {
