@@ -19,7 +19,7 @@
     self.classLab.font = [UIFont systemFontOfSize:11];
     self.classLab.textColor = RGBA(171, 171, 171, 1);
     self.timeLab.textColor = RGBA(171, 171, 171, 1);
-    self.timeLab.font = [UIFont systemFontOfSize:12];
+    self.timeLab.font = [UIFont systemFontOfSize:11];
     
     self.contentLab.font = [UIFont systemFontOfSize:14];
     self.prompLab.font = [UIFont systemFontOfSize:12];
