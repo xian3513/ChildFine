@@ -12,6 +12,7 @@
 
 - (void)cancelNavigationBarTranslucentAndBottomBlackLine;
 
+- (void)addNavigationBackItem;
 @end
 
 @interface UIViewController (MyNavigationController)

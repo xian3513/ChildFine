@@ -21,6 +21,21 @@
     self.navigationBar.titleTextAttributes = @{UITextAttributeTextColor: [UIColor whiteColor]};
 }
 
+- (void)addNavigationBackItem {
+    
+    UIButton *QRbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [QRbutton setBackgroundImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+    QRbutton.frame = CGRectMake(0, 0, 10, 18);
+    
+    
+        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:QRbutton];
+        self.topViewController.navigationItem.leftBarButtonItem = item;
+}
+
+- (void)popBack:(UIBarButtonItem *)item {
+    [self popViewControllerAnimated:YES];
+}
+
 - (void)cancelNavigationBarTranslucentAndBottomBlackLine {
     //去掉nav默认的透明效果 这个属性会导致代码编写的view的y值 差64
     self.navigationBar.translucent = NO;
