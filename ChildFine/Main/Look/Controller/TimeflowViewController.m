@@ -23,9 +23,8 @@
    
     self.title = @"时光流";
     
-    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-TABBAR_HEIGHT-20) style:UITableViewStylePlain];
+    _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-TABBAR_HEIGHT) style:UITableViewStylePlain];
     _tabView.dataSource = self;
-    _tabView.backgroundColor = RGBA(235, 235, 235, 235);
     _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tabView registerNib:[UINib nibWithNibName:@"FlowContentTableViewCell" bundle:nil] forCellReuseIdentifier:@"flowContentCell"];
     _tabView.delegate = self;

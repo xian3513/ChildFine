@@ -20,7 +20,6 @@
 		907771A71BE884070076CBB2 /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A61BE884070076CBB2 /* message.wav */; };
 		907771A91BE8841D0076CBB2 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 907771A81BE8841D0076CBB2 /* scan.wav */; };
 		907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AC1BE8859D0076CBB2 /* BasicView.m */; };
-		907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771AF1BE894FA0076CBB2 /* UIFont+Type.m */; };
 		907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B21BE898A10076CBB2 /* UILabel+Type.m */; };
 		907771B71BE8C3C90076CBB2 /* TimeflowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */; };
 		907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907771C31BE8C6F90076CBB2 /* MeViewController.m */; };
@@ -33,6 +32,7 @@
 		90B367401BEC7CA300CE0E1C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B3673F1BEC7CA300CE0E1C /* libsqlite3.tbd */; };
 		90B367451BEC7E1200CE0E1C /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B367441BEC7E1200CE0E1C /* DatabaseManager.m */; settings = {ASSET_TAGS = (); }; };
 		90B367481BEC7E7900CE0E1C /* ChildPlusHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B367471BEC7E7900CE0E1C /* ChildPlusHandler.m */; settings = {ASSET_TAGS = (); }; };
+		90B3674B1BEC940700CE0E1C /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B3674A1BEC940700CE0E1C /* NSString+Method.m */; settings = {ASSET_TAGS = (); }; };
 		90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550951BE9B51600CFE9F4 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
 		90B5509A1BE9E91400CFE9F4 /* LookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		90B5509B1BE9E91400CFE9F4 /* LookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -69,8 +69,6 @@
 		907771A81BE8841D0076CBB2 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
 		907771AB1BE8859D0076CBB2 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
 		907771AC1BE8859D0076CBB2 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
-		907771AE1BE894FA0076CBB2 /* UIFont+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Type.h"; sourceTree = "<group>"; };
-		907771AF1BE894FA0076CBB2 /* UIFont+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Type.m"; sourceTree = "<group>"; };
 		907771B11BE898A10076CBB2 /* UILabel+Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Type.h"; sourceTree = "<group>"; };
 		907771B21BE898A10076CBB2 /* UILabel+Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Type.m"; sourceTree = "<group>"; };
 		907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeflowTableViewCell.h; sourceTree = "<group>"; };
@@ -95,6 +93,8 @@
 		90B367441BEC7E1200CE0E1C /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		90B367461BEC7E7900CE0E1C /* ChildPlusHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildPlusHandler.h; sourceTree = "<group>"; };
 		90B367471BEC7E7900CE0E1C /* ChildPlusHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildPlusHandler.m; sourceTree = "<group>"; };
+		90B367491BEC940700CE0E1C /* NSString+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Method.h"; sourceTree = "<group>"; };
+		90B3674A1BEC940700CE0E1C /* NSString+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Method.m"; sourceTree = "<group>"; };
 		90B550941BE9B51600CFE9F4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		90B550951BE9B51600CFE9F4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		90B550971BE9E91400CFE9F4 /* LookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookTableViewCell.h; sourceTree = "<group>"; };
@@ -189,10 +189,10 @@
 			children = (
 				9077719F1BE87D4B0076CBB2 /* UIView+Frame.h */,
 				907771A01BE87D4B0076CBB2 /* UIView+Frame.m */,
-				907771AE1BE894FA0076CBB2 /* UIFont+Type.h */,
-				907771AF1BE894FA0076CBB2 /* UIFont+Type.m */,
 				907771B11BE898A10076CBB2 /* UILabel+Type.h */,
 				907771B21BE898A10076CBB2 /* UILabel+Type.m */,
+				90B367491BEC940700CE0E1C /* NSString+Method.h */,
+				90B3674A1BEC940700CE0E1C /* NSString+Method.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -531,7 +531,6 @@
 				907771961BE861270076CBB2 /* LookViewController.m in Sources */,
 				9071B5F41BEB34C1004C78A1 /* FlowContentTableViewCell.m in Sources */,
 				90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */,
-				907771B01BE894FA0076CBB2 /* UIFont+Type.m in Sources */,
 				90B367451BEC7E1200CE0E1C /* DatabaseManager.m in Sources */,
 				90B3673A1BEC7C9800CE0E1C /* FMDatabase.m in Sources */,
 				90B550A11BEA0C3800CFE9F4 /* RootHeaderView.m in Sources */,
@@ -547,6 +546,7 @@
 				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
 				90B367481BEC7E7900CE0E1C /* ChildPlusHandler.m in Sources */,
+				90B3674B1BEC940700CE0E1C /* NSString+Method.m in Sources */,
 				907771C71BE8C7200076CBB2 /* LearnViewController.m in Sources */,
 				907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */,
 				90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */,
