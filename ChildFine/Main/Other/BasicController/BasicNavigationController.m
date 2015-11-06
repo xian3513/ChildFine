@@ -23,12 +23,13 @@
 
 - (void)addNavigationBackItem {
     
-    UIButton *QRbutton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [QRbutton setBackgroundImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
-    QRbutton.frame = CGRectMake(0, 0, 10, 18);
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
     
+    backBtn.frame = CGRectMake(0, 0, 10, 18);
+    [backBtn addTarget:self action:@selector(popBack:) forControlEvents:UIControlEventTouchUpInside];
     
-        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:QRbutton];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
         self.topViewController.navigationItem.leftBarButtonItem = item;
 }
 

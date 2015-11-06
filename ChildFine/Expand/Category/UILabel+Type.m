@@ -23,7 +23,7 @@
     [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle1 range:NSMakeRange(0, [string length])];
    
     //设置不同的字体
-    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial" size:18.0] range:NSMakeRange(0, string.length-2)];
+    [attributedString1 addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial" size:17.0] range:NSMakeRange(0, string.length-2)];
     [self setAttributedText:attributedString1];
     self.textAlignment = NSTextAlignmentCenter;
      //[_flowerLab sizeToFit];
