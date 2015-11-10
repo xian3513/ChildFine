@@ -14,5 +14,5 @@
 @property (nonatomic,copy) NSString *name;
 
 @property (nonatomic,copy) NSString *prompt;
-- (void)setContentViewAndLable;
+
 @end

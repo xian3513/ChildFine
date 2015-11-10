@@ -12,9 +12,6 @@
 
 - (void)awakeFromNib {
     // Initialization code
-}
-
-- (void)setLabTextfontAndColor {
     self.nameLab.font = [UIFont systemFontOfSize:13];
     self.classLab.font = [UIFont systemFontOfSize:11];
     self.classLab.textColor = RGBA(171, 171, 171, 1);
@@ -25,6 +22,7 @@
     self.prompLab.font = [UIFont systemFontOfSize:12];
     self.prompLab.textColor = RGBA(171, 171, 171, 1);
 }
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

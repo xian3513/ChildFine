@@ -41,7 +41,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     FlowContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowContentCell"];
-    [cell setLabTextfontAndColor];
+
     cell.contentImageView.image = [UIImage imageNamed:@"2"];
     cell.nameLab.text = @"xis";
     cell.classLab.text = @"xisT";

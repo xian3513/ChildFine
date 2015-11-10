@@ -101,7 +101,7 @@
         two.downLab.hidden = NO;
         cell = two;
     }
-     [cell setContentViewAndLable];
+
     cell.name = [_nameArray objectAtIndex:indexPath.row];
     cell.prompt = [_promptArray objectAtIndex:indexPath.row];
     

@@ -12,9 +12,6 @@
 
 - (void)awakeFromNib {
     // Initialization code
-}
-
-- (void)setContentViewAndLable {
     [self.upLab familyLableSmallfontAndGrayColor];
     [self.downLab familyLableSmallfontAndGrayColor];
     self.backgroundCellView.layer.borderColor = RGBA(224,224, 224, 1).CGColor;
