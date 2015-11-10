@@ -23,6 +23,8 @@
     NSArray *_nameArray;
     NSArray *_promptArray;
     NSArray *_contentArray;
+    
+    UIRefreshControl *_refreshControl;
 }
 
 @property (nonatomic,strong) UIView *tabViewHeaderView;
@@ -64,8 +66,22 @@
     _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
     
+   _refreshControl = [[UIRefreshControl alloc] init];
+    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+    _refreshControl.tintColor = [UIColor grayColor];
+    [_refreshControl addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];
+    [_tabView addSubview:_refreshControl];
+    
 }
-
+- (void)refreshAction{
+    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"更新数据..."];
+    [self performSelector:@selector(refreshFinish) withObject:nil afterDelay:2];
+    [_refreshControl endRefreshing];
+    
+}
+- (void)refreshFinish{
+    _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+}
 #pragma -get
 - (UIView *)tabViewHeaderView {
     if(!_tabViewHeaderView) {
