@@ -18,5 +18,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *classLab;
 @property (weak, nonatomic) IBOutlet UILabel *timeLab;
 
-- (void)setLabTextfontAndColor;
 @end
