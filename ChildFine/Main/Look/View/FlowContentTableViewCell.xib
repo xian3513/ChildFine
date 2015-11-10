@@ -27,21 +27,21 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-rS-SOM" userLabel="nameLab">
-                                <rect key="frame" x="55" y="3" width="0.0" height="28"/>
+                                <rect key="frame" x="55" y="0.0" width="0.0" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-ex-UtV" userLabel="classLab">
-                                <rect key="frame" x="55" y="28" width="0.0" height="27"/>
+                                <rect key="frame" x="55" y="26" width="0.0" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQC-jN-n4c" userLabel="timeLab">
-                                <rect key="frame" x="55" y="0.0" width="311" height="28"/>
+                                <rect key="frame" x="55" y="0.0" width="311" height="29"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,7 +58,7 @@
                             <constraint firstAttribute="height" constant="55" id="hjO-qe-dt0"/>
                             <constraint firstItem="vCz-ex-UtV" firstAttribute="top" secondItem="Dga-rS-SOM" secondAttribute="bottom" constant="-3" id="hrH-zK-w9N"/>
                             <constraint firstItem="Dga-rS-SOM" firstAttribute="leading" secondItem="dXB-rs-YRC" secondAttribute="trailing" constant="10" id="isc-yz-cpg"/>
-                            <constraint firstItem="Dga-rS-SOM" firstAttribute="top" secondItem="ZAH-Zt-tKt" secondAttribute="top" constant="3" id="kgB-09-LQn"/>
+                            <constraint firstItem="Dga-rS-SOM" firstAttribute="top" secondItem="ZAH-Zt-tKt" secondAttribute="top" id="kgB-09-LQn"/>
                             <constraint firstItem="dXB-rs-YRC" firstAttribute="top" secondItem="ZAH-Zt-tKt" secondAttribute="top" constant="5" id="o7M-94-3QU"/>
                             <constraint firstAttribute="bottom" secondItem="vCz-ex-UtV" secondAttribute="bottom" id="oOS-ie-P0M"/>
                             <constraint firstItem="eQC-jN-n4c" firstAttribute="top" secondItem="ZAH-Zt-tKt" secondAttribute="top" id="uPQ-la-lbp"/>

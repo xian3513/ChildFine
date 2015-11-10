@@ -10,14 +10,19 @@
 #import "RootHeaderView.h"
 #import "TimeflowTableViewCell.h"
 #import "LookTableViewCell.h"
-#import "TimeflowViewController.h"
 
+#import "TimeflowViewController.h"
+#import "HomeworkViewController.h"
+#import "NoticeViewController.h"
+#import "ComeOnViewController.h"
+#import "RollcallViewController.h"
 @interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     RootHeaderView *_headerView;
     UITableView *_tabView;
     NSArray *_nameArray;
     NSArray *_promptArray;
+    NSArray *_contentArray;
 }
 
 @property (nonatomic,strong) UIView *tabViewHeaderView;
@@ -35,8 +40,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
     _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
+    _contentArray = [[NSArray alloc]initWithObjects:@"",@"这里会收到老师发来的作业，\n和孩子一起互动完成吧。",@"",@"张\n家庭表现：优秀，得到小绿叶1枚",@"关注宝宝出勤情况", nil];
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
@@ -99,6 +106,22 @@
         LookTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
         two.blackLineView.hidden = NO;
         two.downLab.hidden = NO;
+        if(indexPath.row == 1){//家长作业
+            two.contentLab.textAlignment = NSTextAlignmentCenter;
+            two.contentLab.numberOfLines = 2;
+            two.contentLab.font = [UIFont systemFontOfSize:12];
+            two.contentLab.text = [_contentArray objectAtIndex:indexPath.row];
+        }
+        else if (indexPath.row == 3){//宝贝加油
+            two.contentLab.textAlignment = NSTextAlignmentLeft;
+            two.contentLab.numberOfLines = 2;
+            two.contentLab.text = [_contentArray objectAtIndex:indexPath.row];
+        }
+        else if (indexPath.row == 4){//点名册
+            two.contentLab.textAlignment = NSTextAlignmentLeft;
+            two.contentLab.numberOfLines = 2;
+            two.contentLab.text = [_contentArray objectAtIndex:indexPath.row];
+        }
         cell = two;
     }
 
@@ -110,6 +133,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *viewController = nil;
+    self.hidesBottomBarWhenPushed = YES;
     switch (indexPath.row) {
         case 0:{
             TimeflowViewController *controller = [[TimeflowViewController alloc]init];
@@ -117,19 +141,28 @@
          break;
         }
         case 1:{
+            HomeworkViewController *controller = [[HomeworkViewController alloc]init];
+            viewController = controller;
             break;
         }
         case 2:{
+            NoticeViewController *controller = [[NoticeViewController alloc]init];
+            viewController = controller;
             break;
         }
         case 3:{
+            ComeOnViewController *controller = [[ComeOnViewController alloc]init];
+            viewController = controller;
             break;
         }
         case 4:{
+            RollcallViewController *controller = [[RollcallViewController alloc]init];
+            viewController = controller;
             break;
         }
     }
     [self.navigationController pushViewController:viewController animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
     
 }
 - (void)buttonPress:(UIBarButtonItem *)item {

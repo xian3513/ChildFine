@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIView *blackLineView;
 @property (weak, nonatomic) IBOutlet UILabel *upLab;
 @property (weak, nonatomic) IBOutlet UILabel *downLab;
+@property (weak, nonatomic) IBOutlet UILabel *contentLab;
 
 @end

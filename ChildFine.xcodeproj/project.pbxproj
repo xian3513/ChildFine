@@ -58,6 +58,12 @@
 		90BD7E901BF19C55006AB9E6 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E831BF19C55006AB9E6 /* NSObject+MJKeyValue.m */; settings = {ASSET_TAGS = (); }; };
 		90BD7E911BF19C55006AB9E6 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E851BF19C55006AB9E6 /* NSObject+MJProperty.m */; settings = {ASSET_TAGS = (); }; };
 		90BD7E921BF19C55006AB9E6 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E871BF19C55006AB9E6 /* NSString+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7E951BF1A5B6006AB9E6 /* HomeworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E941BF1A5B6006AB9E6 /* HomeworkViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7E981BF1A5CB006AB9E6 /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E971BF1A5CB006AB9E6 /* NoticeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7E9B1BF1A5EB006AB9E6 /* ComeOnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E9A1BF1A5EB006AB9E6 /* ComeOnViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7E9E1BF1A610006AB9E6 /* RollcallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7E9D1BF1A610006AB9E6 /* RollcallViewController.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7EA31BF1CD13006AB9E6 /* FlowTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD7EA11BF1CD13006AB9E6 /* FlowTwoTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		90BD7EA41BF1CD13006AB9E6 /* FlowTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BD7EA21BF1CD13006AB9E6 /* FlowTwoTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		90BF026C1BE7002D006A84C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026B1BE7002D006A84C0 /* main.m */; };
 		90BF026F1BE7002D006A84C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF026E1BE7002D006A84C0 /* AppDelegate.m */; };
 		90BF02721BE7002D006A84C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BF02711BE7002D006A84C0 /* ViewController.m */; };
@@ -166,6 +172,17 @@
 		90BD7E851BF19C55006AB9E6 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		90BD7E861BF19C55006AB9E6 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		90BD7E871BF19C55006AB9E6 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		90BD7E931BF1A5B6006AB9E6 /* HomeworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeworkViewController.h; sourceTree = "<group>"; };
+		90BD7E941BF1A5B6006AB9E6 /* HomeworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeworkViewController.m; sourceTree = "<group>"; };
+		90BD7E961BF1A5CB006AB9E6 /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
+		90BD7E971BF1A5CB006AB9E6 /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
+		90BD7E991BF1A5EB006AB9E6 /* ComeOnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeOnViewController.h; sourceTree = "<group>"; };
+		90BD7E9A1BF1A5EB006AB9E6 /* ComeOnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComeOnViewController.m; sourceTree = "<group>"; };
+		90BD7E9C1BF1A610006AB9E6 /* RollcallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollcallViewController.h; sourceTree = "<group>"; };
+		90BD7E9D1BF1A610006AB9E6 /* RollcallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollcallViewController.m; sourceTree = "<group>"; };
+		90BD7EA01BF1CD13006AB9E6 /* FlowTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowTwoTableViewCell.h; sourceTree = "<group>"; };
+		90BD7EA11BF1CD13006AB9E6 /* FlowTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowTwoTableViewCell.m; sourceTree = "<group>"; };
+		90BD7EA21BF1CD13006AB9E6 /* FlowTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowTwoTableViewCell.xib; sourceTree = "<group>"; };
 		90BF02671BE7002D006A84C0 /* ChildFine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildFine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BF026B1BE7002D006A84C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90BF026D1BE7002D006A84C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,17 +230,13 @@
 		907771921BE861220076CBB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */,
-				907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */,
-				904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */,
-				90B550971BE9E91400CFE9F4 /* LookTableViewCell.h */,
-				90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */,
-				90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */,
-				90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */,
-				90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */,
+				90BD7E9F1BF1CCAB006AB9E6 /* Look */,
 				9071B5F11BEB34C1004C78A1 /* FlowContentTableViewCell.h */,
 				9071B5F21BEB34C1004C78A1 /* FlowContentTableViewCell.m */,
 				9071B5F61BEB38EB004C78A1 /* FlowContentTableViewCell.xib */,
+				90BD7EA01BF1CD13006AB9E6 /* FlowTwoTableViewCell.h */,
+				90BD7EA11BF1CD13006AB9E6 /* FlowTwoTableViewCell.m */,
+				90BD7EA21BF1CD13006AB9E6 /* FlowTwoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +248,14 @@
 				907771951BE861270076CBB2 /* LookViewController.m */,
 				9071B5EE1BEB30F7004C78A1 /* TimeflowViewController.h */,
 				9071B5EF1BEB30F7004C78A1 /* TimeflowViewController.m */,
+				90BD7E931BF1A5B6006AB9E6 /* HomeworkViewController.h */,
+				90BD7E941BF1A5B6006AB9E6 /* HomeworkViewController.m */,
+				90BD7E961BF1A5CB006AB9E6 /* NoticeViewController.h */,
+				90BD7E971BF1A5CB006AB9E6 /* NoticeViewController.m */,
+				90BD7E991BF1A5EB006AB9E6 /* ComeOnViewController.h */,
+				90BD7E9A1BF1A5EB006AB9E6 /* ComeOnViewController.m */,
+				90BD7E9C1BF1A610006AB9E6 /* RollcallViewController.h */,
+				90BD7E9D1BF1A610006AB9E6 /* RollcallViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,6 +470,21 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
+		90BD7E9F1BF1CCAB006AB9E6 /* Look */ = {
+			isa = PBXGroup;
+			children = (
+				907771B41BE8C3C90076CBB2 /* TimeflowTableViewCell.h */,
+				907771B51BE8C3C90076CBB2 /* TimeflowTableViewCell.m */,
+				904E6BC21BE90069002ADFFE /* TimeflowTableViewCell.xib */,
+				90B550971BE9E91400CFE9F4 /* LookTableViewCell.h */,
+				90B550981BE9E91400CFE9F4 /* LookTableViewCell.m */,
+				90B550991BE9E91400CFE9F4 /* LookTableViewCell.xib */,
+				90B5509C1BE9EBE900CFE9F4 /* BasicTableViewCell.h */,
+				90B5509D1BE9EBE900CFE9F4 /* BasicTableViewCell.m */,
+			);
+			name = Look;
+			sourceTree = "<group>";
+		};
 		90BF025E1BE7002D006A84C0 = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +669,7 @@
 				90BF02751BE7002D006A84C0 /* Main.storyboard in Resources */,
 				9071B5F71BEB38EB004C78A1 /* FlowContentTableViewCell.xib in Resources */,
 				904E6BC31BE90069002ADFFE /* TimeflowTableViewCell.xib in Resources */,
+				90BD7EA41BF1CD13006AB9E6 /* FlowTwoTableViewCell.xib in Resources */,
 				907771A71BE884070076CBB2 /* message.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9077718E1BE8600E0076CBB2 /* BasicNavigationController.m in Sources */,
+				90BD7E9B1BF1A5EB006AB9E6 /* ComeOnViewController.m in Sources */,
 				90BF02721BE7002D006A84C0 /* ViewController.m in Sources */,
 				907771A41BE87E820076CBB2 /* CommonMacros.h in Sources */,
 				90B5509E1BE9EBE900CFE9F4 /* BasicTableViewCell.m in Sources */,
@@ -657,6 +695,7 @@
 				90BD7E921BF19C55006AB9E6 /* NSString+MJExtension.m in Sources */,
 				90B367451BEC7E1200CE0E1C /* DatabaseManager.m in Sources */,
 				90BD7E8C1BF19C55006AB9E6 /* MJPropertyKey.m in Sources */,
+				90BD7EA31BF1CD13006AB9E6 /* FlowTwoTableViewCell.m in Sources */,
 				90B367671BEC9C4B00CE0E1C /* AFURLResponseSerialization.m in Sources */,
 				90B3673A1BEC7C9800CE0E1C /* FMDatabase.m in Sources */,
 				90B550A11BEA0C3800CFE9F4 /* RootHeaderView.m in Sources */,
@@ -672,10 +711,12 @@
 				907771B31BE898A10076CBB2 /* UILabel+Type.m in Sources */,
 				90B3673E1BEC7C9800CE0E1C /* FMResultSet.m in Sources */,
 				907771901BE8600E0076CBB2 /* MainTabBarViewController.m in Sources */,
+				90BD7E981BF1A5CB006AB9E6 /* NoticeViewController.m in Sources */,
 				90BF026C1BE7002D006A84C0 /* main.m in Sources */,
 				90B3673D1BEC7C9800CE0E1C /* FMDatabaseQueue.m in Sources */,
 				90B367611BEC9C4B00CE0E1C /* AFHTTPRequestOperationManager.m in Sources */,
 				907771A11BE87D4B0076CBB2 /* UIView+Frame.m in Sources */,
+				90BD7E951BF1A5B6006AB9E6 /* HomeworkViewController.m in Sources */,
 				90BD7E911BF19C55006AB9E6 /* NSObject+MJProperty.m in Sources */,
 				90BF02A61BE7366D006A84C0 /* README.txt in Sources */,
 				90B367621BEC9C4B00CE0E1C /* AFHTTPSessionManager.m in Sources */,
@@ -688,6 +729,7 @@
 				907771C41BE8C6F90076CBB2 /* MeViewController.m in Sources */,
 				90B550961BE9B51600CFE9F4 /* Reachability.m in Sources */,
 				90BD7E8B1BF19C55006AB9E6 /* MJProperty.m in Sources */,
+				90BD7E9E1BF1A610006AB9E6 /* RollcallViewController.m in Sources */,
 				907771AD1BE8859D0076CBB2 /* BasicView.m in Sources */,
 				9071B5F01BEB30F7004C78A1 /* TimeflowViewController.m in Sources */,
 				90B367631BEC9C4B00CE0E1C /* AFNetworkReachabilityManager.m in Sources */,

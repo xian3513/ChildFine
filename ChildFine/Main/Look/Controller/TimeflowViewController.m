@@ -9,6 +9,7 @@
 #import "TimeflowViewController.h"
 
 #import "FlowContentTableViewCell.h"
+#import "FlowTwoTableViewCell.h"
 @interface TimeflowViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UITableView *_tabView;
 }
@@ -27,7 +28,9 @@
     _tabView.dataSource = self;
     _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tabView registerNib:[UINib nibWithNibName:@"FlowContentTableViewCell" bundle:nil] forCellReuseIdentifier:@"flowContentCell"];
+    [_tabView registerNib:[UINib nibWithNibName:@"FlowTwoTableViewCell" bundle:nil] forCellReuseIdentifier:@"flowTwoCell"];
     _tabView.delegate = self;
+    _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     [self.view addSubview:_tabView];
 }
 
@@ -36,19 +39,34 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.row == 0){
+        return 220;
+    }
     return 380;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FlowContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowContentCell"];
-
-    cell.contentImageView.image = [UIImage imageNamed:@"2"];
-    cell.nameLab.text = @"xis";
-    cell.classLab.text = @"xisT";
-    cell.timeLab.text = @"27分钟前";
-    cell.contentLab.text = @"dequeueReusableCellWithIdentifier";
-    cell.prompLab.text = @"等待家长珍藏";
-    return cell;
+    
+    if(indexPath.row == 0) {
+        FlowTwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowTwoCell"];
+        cell.nameLab.text = @"xis";
+        cell.classLab.text = @"xisT";
+        cell.timeLab.text = @"刚刚";
+        cell.contentLab.text = @"三张";
+        cell.promptLab.text = @"等待家长珍藏";
+        return cell;
+    } else {
+        FlowContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowContentCell"];
+        
+        cell.contentImageView.image = [UIImage imageNamed:@"2"];
+        cell.nameLab.text = @"xis";
+        cell.classLab.text = @"xisT";
+        cell.timeLab.text = @"27分钟前";
+        cell.contentLab.text = @"dequeueReusableCellWithIdentifier";
+        cell.prompLab.text = @"等待家长珍藏";
+        return cell;
+    }
+   
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

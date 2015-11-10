@@ -54,7 +54,22 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6H-ed-xm6">
                                 <rect key="frame" x="0.0" y="30" width="495" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-3L-Dc3" userLabel="contentLab">
+                                        <rect key="frame" x="10" y="0.0" width="475" height="135"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="o5a-3L-Dc3" firstAttribute="top" secondItem="n6H-ed-xm6" secondAttribute="top" id="IbQ-2j-Gzw"/>
+                                    <constraint firstAttribute="trailing" secondItem="o5a-3L-Dc3" secondAttribute="trailing" constant="10" id="Kar-ZX-rQ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="o5a-3L-Dc3" secondAttribute="bottom" id="mJF-H5-PMR"/>
+                                    <constraint firstItem="o5a-3L-Dc3" firstAttribute="leading" secondItem="n6H-ed-xm6" secondAttribute="leading" constant="10" id="yxb-7R-GWq"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -92,6 +107,7 @@
             <connections>
                 <outlet property="backgroundCellView" destination="Phj-gk-JQe" id="5cd-bm-9PH"/>
                 <outlet property="blackLineView" destination="d3v-xl-Ssh" id="57D-sj-iyN"/>
+                <outlet property="contentLab" destination="o5a-3L-Dc3" id="W9v-gd-5JQ"/>
                 <outlet property="downLab" destination="dJT-w8-0Vh" id="d5c-aX-BCV"/>
                 <outlet property="upLab" destination="cJh-2l-a2C" id="F2j-op-XVQ"/>
             </connections>
