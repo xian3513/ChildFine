@@ -18,16 +18,14 @@
 
 @implementation MeViewController
 
-- (void)defaultDataAndView {
-    [super defaultDataAndView];
-    [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
-    [self addHeaderIconOrChildPlusImageOnLeftbarButtonItem:NO];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //init
     tabcellHeight = 40;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.MyNavigationController addPromptAndQRCodeOnRightBarButtonItemWith:nil action:nil];
+    [self.MyNavigationController addHeaderIconOrChildPlusImageOnLeftbarButtonItem:NO];
+    
     _nameArray = [[NSArray alloc]initWithObjects:@"xis",@"",@"我的宝贝",@"我要缴费",@"",@"设置", nil];
     _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, tabcellHeight*6) style:UITableViewStylePlain];
     _tabView.delegate = self;

@@ -40,8 +40,7 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
 //重写父类初始化 方法/
 - (void)defaultDataAndView {
     [super defaultDataAndView];
-    [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
-    [self addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
+    
 }
 
 - (void)viewDidLoad {
@@ -51,8 +50,9 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
     _nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
     _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
     _contentArray = [[NSArray alloc]initWithObjects:@"",@"这里会收到老师发来的作业，\n和孩子一起互动完成吧。",@"",@"张\n家庭表现：优秀，得到小绿叶1枚",@"关注宝宝出勤情况", nil];
-   [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
-    
+    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
+    [self.MyNavigationController addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
+    [self.MyNavigationController addPromptAndQRCodeOnRightBarButtonItemWith:nil action:nil];
     //假数据
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
     [self.view addSubview:_headerView];

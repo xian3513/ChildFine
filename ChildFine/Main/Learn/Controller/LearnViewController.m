@@ -20,16 +20,12 @@
 
 @implementation LearnViewController
 
-- (void)defaultDataAndView {
-    [super defaultDataAndView];
-    [self addPromptAndQRCodeOnRightBarButtonItemWith:self action:@selector(buttonPress:)];
-    [self addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
+    [self.MyNavigationController addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
+    [self.MyNavigationController addPromptAndQRCodeOnRightBarButtonItemWith:nil action:nil];
     
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:NO];
     [self.view addSubview:_headerView];
@@ -42,7 +38,7 @@
 
 - (void)addShowView {
     _showView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
-    _showView.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - _headerView.bottom - 64 -TABBAR_HEIGHT);
+    _showView.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - _headerView.bottom - 64 -TABBAR_HEIGHT -15);
     [self.view addSubview:_showView];
     UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, _showView.width, _showView.height/2)];
     lab.textAlignment = NSTextAlignmentCenter;
@@ -52,7 +48,7 @@
     [_showView addSubview:lab];
     
     UIButton *courseButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    courseButton.frame = CGRectMake(_showView.width/16*3, _showView.height/2, SCREEN_WIDTH/8*5, 38);
+    courseButton.frame = CGRectMake(_showView.width/16*3, _showView.height/2-5, SCREEN_WIDTH/8*5, 40);
     [courseButton setTitle:@"立即开通" forState:UIControlStateNormal];
     courseButton.backgroundColor = RGBA(171, 171, 171, 1);
     courseButton.layer.cornerRadius = courseButton.height/2;
