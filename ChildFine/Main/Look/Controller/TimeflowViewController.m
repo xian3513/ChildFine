@@ -18,6 +18,7 @@ static NSString *FlowOneCellIndentifer = @"flowContentCell";
 static NSString *FlowTwoCellIndentifer = @"flowTwoCell";
 
 @interface TimeflowViewController ()<UITableViewDataSource,UITableViewDelegate>{
+    
     UITableView *_tabView;
 }
 
@@ -77,7 +78,18 @@ static NSString *FlowTwoCellIndentifer = @"flowTwoCell";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-   
+//    NSMutableArray *marr = [[NSMutableArray alloc]initWithCapacity:5];
+//    for(int i=0;i<5;i++){
+//        MJPhoto *photo = [[MJPhoto alloc]init];
+//        photo.url = [NSURL URLWithString:@"http://imagesource.metroer.com/20081027/337532/20081027/122512015169044400.jpg"];
+//        photo.srcImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"save_icon_highlighted"]];
+//        [marr addObject:photo];
+//    }
+//    
+//    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+//    browser.currentPhotoIndex = 0;
+//    browser.photos = marr;
+//    [browser show];
 }
 
 - (void)didReceiveMemoryWarning {
