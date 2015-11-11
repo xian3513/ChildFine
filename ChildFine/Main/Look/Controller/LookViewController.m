@@ -16,6 +16,10 @@
 #import "NoticeViewController.h"
 #import "ComeOnViewController.h"
 #import "RollcallViewController.h"
+
+static NSString *lookCellIndentifer_One = @"lookCell_One";
+static NSString *lookCellIndentifer_Two = @"lookCell_Two";
+
 @interface LookViewController ()<UITableViewDataSource,UITableViewDelegate>{
     
     RootHeaderView *_headerView;
@@ -43,11 +47,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //初始化数据
     _nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
     _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
     _contentArray = [[NSArray alloc]initWithObjects:@"",@"这里会收到老师发来的作业，\n和孩子一起互动完成吧。",@"",@"张\n家庭表现：优秀，得到小绿叶1枚",@"关注宝宝出勤情况", nil];
    [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     
+    //假数据
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
     [self.view addSubview:_headerView];
     _headerView.name = @"张";
@@ -60,12 +66,13 @@
     _tabView.delegate = self;
     _tabView.dataSource = self;
     _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_One"];
-    [_tabView registerNib:[UINib nibWithNibName:@"LookTableViewCell" bundle:nil] forCellReuseIdentifier:@"lookCell_Two"];
+    [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:lookCellIndentifer_One];
+    [_tabView registerNib:[UINib nibWithNibName:@"LookTableViewCell" bundle:nil] forCellReuseIdentifier:lookCellIndentifer_Two];
     _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     _tabView.tableHeaderView = self.tabViewHeaderView;
     [self.view addSubview:_tabView];
     
+    //下拉刷新
    _refreshControl = [[UIRefreshControl alloc] init];
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
     _refreshControl.tintColor = [UIColor grayColor];
@@ -115,14 +122,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BasicTableViewCell *cell = nil;
     if(indexPath.row == 0){
-       TimeflowTableViewCell *one = [tableView dequeueReusableCellWithIdentifier:@"lookCell_One"];
+       TimeflowTableViewCell *one = [tableView dequeueReusableCellWithIdentifier:lookCellIndentifer_One];
         
         cell = one;
     } else {
-        LookTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:@"lookCell_Two"];
+        
+        LookTableViewCell *two = [tableView dequeueReusableCellWithIdentifier:lookCellIndentifer_Two];
         two.blackLineView.hidden = NO;
         two.downLab.hidden = NO;
-        if(indexPath.row == 1){//家长作业
+        
+        if(indexPath.row == 1) {//家长作业
             two.contentLab.textAlignment = NSTextAlignmentCenter;
             two.contentLab.numberOfLines = 2;
             two.contentLab.font = [UIFont systemFontOfSize:12];

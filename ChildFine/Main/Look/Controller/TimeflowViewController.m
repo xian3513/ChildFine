@@ -10,6 +10,13 @@
 
 #import "FlowContentTableViewCell.h"
 #import "FlowTwoTableViewCell.h"
+
+#import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
+
+static NSString *FlowOneCellIndentifer = @"flowContentCell";
+static NSString *FlowTwoCellIndentifer = @"flowTwoCell";
+
 @interface TimeflowViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UITableView *_tabView;
 }
@@ -27,8 +34,8 @@
     _tabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-TABBAR_HEIGHT) style:UITableViewStylePlain];
     _tabView.dataSource = self;
     _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [_tabView registerNib:[UINib nibWithNibName:@"FlowContentTableViewCell" bundle:nil] forCellReuseIdentifier:@"flowContentCell"];
-    [_tabView registerNib:[UINib nibWithNibName:@"FlowTwoTableViewCell" bundle:nil] forCellReuseIdentifier:@"flowTwoCell"];
+    [_tabView registerNib:[UINib nibWithNibName:@"FlowContentTableViewCell" bundle:nil] forCellReuseIdentifier:FlowOneCellIndentifer];
+    [_tabView registerNib:[UINib nibWithNibName:@"FlowTwoTableViewCell" bundle:nil] forCellReuseIdentifier:FlowTwoCellIndentifer];
     _tabView.delegate = self;
     _tabView.backgroundColor = RGBA(235, 235, 235, 1);
     [self.view addSubview:_tabView];
@@ -48,7 +55,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(indexPath.row == 0) {
-        FlowTwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowTwoCell"];
+        FlowTwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FlowTwoCellIndentifer];
         cell.nameLab.text = @"xis";
         cell.classLab.text = @"xisT";
         cell.timeLab.text = @"刚刚";
@@ -56,7 +63,7 @@
         cell.promptLab.text = @"等待家长珍藏";
         return cell;
     } else {
-        FlowContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"flowContentCell"];
+        FlowContentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FlowOneCellIndentifer];
         
         cell.contentImageView.image = [UIImage imageNamed:@"2"];
         cell.nameLab.text = @"xis";
@@ -70,7 +77,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+   
 }
 
 - (void)didReceiveMemoryWarning {

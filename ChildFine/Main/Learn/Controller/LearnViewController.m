@@ -9,7 +9,9 @@
 #import "LearnViewController.h"
 #import "RootHeaderView.h"
 #import "UILabel+Type.h"
+
 @interface LearnViewController () {
+    
     RootHeaderView *_headerView;
     UIView *_showView;
 }
@@ -26,7 +28,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
+    
     _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:NO];
     [self.view addSubview:_headerView];
     _headerView.name = @"张";
@@ -38,7 +42,7 @@
 
 - (void)addShowView {
     _showView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
-    _showView.center = CGPointMake(SCREEN_WIDTH/2, CONTENT_HEIGHT-_headerView.bottom-TABBAR_HEIGHT);
+    _showView.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - _headerView.bottom - 64 -TABBAR_HEIGHT);
     [self.view addSubview:_showView];
     UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, _showView.width, _showView.height/2)];
     lab.textAlignment = NSTextAlignmentCenter;
