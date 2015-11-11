@@ -80,6 +80,7 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
     [_tabView addSubview:_refreshControl];
     
 }
+#pragma - 下拉刷新
 - (void)refreshAction{
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"更新数据..."];
     [self performSelector:@selector(refreshFinish) withObject:nil afterDelay:2];
@@ -89,11 +90,17 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
 - (void)refreshFinish{
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
 }
+
 #pragma -get
 - (UIView *)tabViewHeaderView {
     if(!_tabViewHeaderView) {
         _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 15)];
         _tabViewHeaderView.backgroundColor = [UIColor clearColor];
+        UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(15, 7, 200, _tabViewHeaderView.height)];
+        lab.textColor = RGBA(177, 177, 177, 1);
+        lab.font = [UIFont boldSystemFontOfSize:9.5];
+        lab.text = @"14:00 全部更新";
+        [_tabViewHeaderView addSubview:lab];
     }
     return _tabViewHeaderView;
 }
