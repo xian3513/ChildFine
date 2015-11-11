@@ -47,59 +47,65 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
     [super viewDidLoad];
     
     //初始化数据
-    _nameArray = [[NSArray alloc]initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
-    _promptArray = [[NSArray alloc]initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
-    _contentArray = [[NSArray alloc]initWithObjects:@"",@"这里会收到老师发来的作业，\n和孩子一起互动完成吧。",@"",@"张\n家庭表现：优秀，得到小绿叶1枚",@"关注宝宝出勤情况", nil];
+    _nameArray      = [[NSArray alloc] initWithObjects:@"时光流",@"家长作业",@"通知",@"宝贝加油",@"点名册", nil];
+    _promptArray    = [[NSArray alloc] initWithObjects:@"更多照片，快来珍藏吧",@"",@"",@"点击查看",@"点击查看", nil];
+    _contentArray   = [[NSArray alloc] initWithObjects:@"",@"这里会收到老师发来的作业，\n和孩子一起互动完成吧。",@"",@"张\n家庭表现：优秀，得到小绿叶1枚",@"关注宝宝出勤情况", nil];
     [self.MyNavigationController cancelNavigationBarTranslucentAndBottomBlackLine];
     [self.MyNavigationController addHeaderIconOrChildPlusImageOnLeftbarButtonItem:YES];
     [self.MyNavigationController addPromptAndQRCodeOnRightBarButtonItemWith:nil action:nil];
+    
     //假数据
-    _headerView = [[RootHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
+    _headerView             = [[RootHeaderView alloc]
+                               initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 120) isLook:YES];
     [self.view addSubview:_headerView];
-    _headerView.name = @"张";
-    _headerView.age = 3;
-    _headerView.childClass = @"xisT";
+    _headerView.name        = @"张";
+    _headerView.age         = 3;
+    _headerView.childClass  = @"xisT";
     _headerView.flowerCount = 123;
     
     //tabView
-    _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
-    _tabView.delegate = self;
-    _tabView.dataSource = self;
-    _tabView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tabView                    = [[UITableView alloc] initWithFrame:
+                                   CGRectMake(0, _headerView.bottom, SCREEN_WIDTH, CONTENT_HEIGHT - _headerView.bottom) style:UITableViewStylePlain];
+    _tabView.delegate           = self;
+    _tabView.dataSource         = self;
+    _tabView.backgroundColor    = RGBA(235, 235, 235, 1);
+    _tabView.tableHeaderView    = self.tabViewHeaderView;
+    _tabView.separatorStyle     = UITableViewCellSeparatorStyleNone;
+    
     [_tabView registerNib:[UINib nibWithNibName:@"TimeflowTableViewCell" bundle:nil] forCellReuseIdentifier:lookCellIndentifer_One];
     [_tabView registerNib:[UINib nibWithNibName:@"LookTableViewCell" bundle:nil] forCellReuseIdentifier:lookCellIndentifer_Two];
-    _tabView.backgroundColor = RGBA(235, 235, 235, 1);
-    _tabView.tableHeaderView = self.tabViewHeaderView;
+   
     [self.view addSubview:_tabView];
     
     //下拉刷新
-   _refreshControl = [[UIRefreshControl alloc] init];
+   _refreshControl  = [[UIRefreshControl alloc] init];
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
-    _refreshControl.tintColor = [UIColor grayColor];
+    _refreshControl.tintColor       = [UIColor grayColor];
     [_refreshControl addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];
     [_tabView addSubview:_refreshControl];
     
 }
 #pragma - 下拉刷新
-- (void)refreshAction{
+- (void)refreshAction {
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"更新数据..."];
     [self performSelector:@selector(refreshFinish) withObject:nil afterDelay:2];
     [_refreshControl endRefreshing];
     
 }
-- (void)refreshFinish{
+- (void)refreshFinish {
     _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
 }
 
 #pragma -get
 - (UIView *)tabViewHeaderView {
     if(!_tabViewHeaderView) {
-        _tabViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tabView.width, 15)];
+        _tabViewHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _tabView.width, 15)];
         _tabViewHeaderView.backgroundColor = [UIColor clearColor];
-        UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(15, 7, 200, _tabViewHeaderView.height)];
-        lab.textColor = RGBA(177, 177, 177, 1);
-        lab.font = [UIFont boldSystemFontOfSize:9.5];
-        lab.text = @"14:00 全部更新";
+        
+        UILabel *lab    = [[UILabel alloc] initWithFrame:CGRectMake(15, 7, 200, _tabViewHeaderView.height)];
+        lab.textColor   = RGBA(177, 177, 177, 1);
+        lab.font        = [UIFont boldSystemFontOfSize:9.5];
+        lab.text        = @"14:00 全部更新";
         [_tabViewHeaderView addSubview:lab];
     }
     return _tabViewHeaderView;
@@ -196,13 +202,6 @@ static NSString *lookCellIndentifer_Two = @"lookCell_Two";
     [self.navigationController pushViewController:viewController animated:YES];
     self.hidesBottomBarWhenPushed = NO;
     
-}
-- (void)buttonPress:(UIBarButtonItem *)item {
-    if(item.tag == 0){ //QRCode
-    
-    }else {//消息
-    
-    }
 }
 
 - (void)didReceiveMemoryWarning {
