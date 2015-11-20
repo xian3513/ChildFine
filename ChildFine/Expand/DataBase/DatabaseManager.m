@@ -8,10 +8,15 @@
 
 #import "DatabaseManager.h"
 #import "FMDB.h"
+
+static DatabaseManager *manager = nil;
+
 @interface DatabaseManager() {
     FMDatabase *db;
     FMDatabaseQueue * _queue;
 }
+
+
 
 @property (nonatomic,strong)FMDatabaseQueue * queue;
 @end
@@ -23,14 +28,38 @@
    return [[self alloc]init];
 }
 
+//重写init 防止 外部 init出新对象
+- (instancetype)init
+{
+    NSString *string = (NSString *)manager;
+    if([string isKindOfClass:[NSString class]] && [string isEqualToString:@"DatabaseManager"]) {
+        self = [super init];
+        if (self) {
+            
+        }
+        return self;
+    } else {
+        return nil;
+    }
+    
+    
+}
 + (DatabaseManager *)shareDatabaseQueue {
-    static DatabaseManager *manager = nil;
+  
     static dispatch_once_t predicate;
     dispatch_once(&predicate,^{
+        
+        manager = (DatabaseManager *)@"DatabaseManager";
         manager = [[self alloc]init];
         //默认路径
         manager.queue = [FMDatabaseQueue databaseQueueWithPath:@"default.sqlite"];
     });
+    
+    //防止子类继承本类，调用该方法
+    NSString *classString = NSStringFromClass([self class]);
+    if([classString isEqualToString:@"DatabaseManager"]) {
+        NSAssert(0, @"继承了单例类 :DatabaseManager");
+    }
     return manager;
 }
 
